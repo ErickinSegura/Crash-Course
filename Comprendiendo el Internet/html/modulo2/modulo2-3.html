@@ -1,34 +1,16 @@
-<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
-    />
-    <title>
-      Módulo 1: Componentes de una computadora | CVA - Centro Virtual de
-      Aprendizaje
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no" />
+    <title>Módulo 2: ¿Cómo usar el Internet? | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
 
     <!-- plugins css -->
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
-    />
-
-    <!-- page plugins css -->
+    <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -40,248 +22,217 @@
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
 
     <style>
-      .card-hover:hover {
-        cursor: pointer;
-      }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin: 0 -5px;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: calc(45%);
+            margin: 10px 5px; /* Modificado */
+            height: 170px;
+            perspective: 1000px;
+            flex: 0 0 auto;
+            align-items: center; 
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 10px 5px; 
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            font-weight: bold; /* Negrita */
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-front.hub {
+            background-image: url('../../assets/images/course/modulo2/Network-Switch.jpeg.webp');
+        }
+
+        .flip-card-front.router {
+            background-image: url('../../assets/images/course/modulo2/1100207695.jpg');
+        }
+
+        .flip-card-front.switch {
+            background-image: url('../../assets/images/course/modulo2/switch-fast-ethernet-de-5-puertos.webp');
+        }
+
+        .flip-card-front.direccion-ip {
+            background-image: url('../../assets/images/course/modulo2/88c734f8-2777-41e3-8f52-071704b9c721.jpeg');
+        }
+
+        .flip-card-front.DNS {
+            background-image: url('../../assets/images/course/modulo2/798acb8b-acf4-42ca-8062-5a8101aa85bb.jpeg');
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            font-weight: bold; /* Negrita */
+        }
     </style>
-  </head>
+</head>
 
-  <body class="header-info side-nav-dark">
+<body class="header-info side-nav-dark">
     <div class="app">
-      <div class="layout">
-        <!-- Side Nav START -->
-        <div class="side-nav" id="sideNav"></div>
-        <!-- Side Nav END -->
-        <!-- Page Container START -->
-        <div class="page-container">
-          <!-- Header START -->
-          <div class="header navbar"></div>
-          <!-- Header END -->
-          <!-- Content Wrapper START -->
-          <div class="main-content">
-            <div class="container-fluid">
-              <!-- Your content goes here -->
+        <div class="layout">
+            <!-- Side Nav START -->
+            <div class="side-nav" id="sideNav"></div>
+            <!-- Side Nav END -->
 
-              <div class="card">
-                <div class="card-horizon">
-                  <div class="row">
-                    <div class="col-md-12 ml-auto">
-                      <div class="pdd-vertical-30 pdd-horizon-25">
-                        <h1 class="mrg-btm-20 card-title">
-                          Componentes de una computadora
-                        </h1>
-                        <p>
-                          Una computadora está formada por muchos componentes
-                          eléctricos, electrónicos y mecánicos conocidos como
-                          “Hardware”. Estos componentes incluyen dispositivos de
-                          entrada, dispositivos de salida, la unidad principal o
-                          "chasis" de la computadora, dispositivos de
-                          almacenamiento y dispositivos de comunicaciones.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <!-- Page Container START -->
+            <div class="page-container">
+                <!-- Header START -->
+                <div class="header navbar"></div>
+                <!-- Header END -->
 
-              <div class="card">
-                <div class="card-block">
-                  <h1 class="mrg-btm-20 card-title">Actividad</h1>
-                  <h5 class="feed-subtitle">
-                    Observa la imagen y selecciona la letra correcta
-                  </h5>
-                  <div class="row">
-                    <div class="col-md-7">
-                      <img
-                        src="../../assets/images/course/modulo2/computadora/actividad.png"
-                        alt="ImagenActividad"
-                      />
-                      <!---->
-                    </div>
-                    <form class="col-md-5 pt-4">
-                      <div class="feed-body form-group">
+                <!-- Content Wrapper START -->
+                <div class="main-content">
+                    <div class="container-fluid px-0 px-sm-3">
+                        <!-- Your content goes here -->
                         <div class="row">
-                          <div
-                            class="form-check"
-                            id="selectElem"
-                            style="color: black"
-                          >
-                            <div>
-                              <label class="form-check-label mb-2">
-                                <select id="Q1">
-                                  <option value="Wrong">...</option>
-                                  <option value="correct">A)</option>
-                                  <option value="Wrong">B)</option>
-                                  <option value="Wrong">C)</option>
-                                  <option value="Wrong">D)</option>
-                                  <option value="Wrong">E)</option>
-                                  <option value="Wrong">F)</option>
-                                  <option value="Wrong">G)</option>
-                                </select>
-                                Monitor
-                              </label>
+                            <div class="col">
+                                <div class="flechas">
+                                    <div class="flecha-izquierda">
+                                        <a href="../modulo1/modulo1-1.html" class="modulo-anterior">
+                                            <i class="ei ei-left-arrow mr-2"></i>
+                                            <span> Módulo Anterior</span>
+                                        </a>
+                                    </div>
+                                    <div class="flecha-derecha">
+                                        <a href="../modulo3/modulo3-1.html" class="modulo-siguiente">
+                                            <span> Módulo Siguiente</span>
+                                            <i class="ei ei-right-arrow ml-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-horizon">
+                                        <h1 class="mrg-btm-20 card-title">
+                                            <span class="badge badge-light tema-n">Tema 1: Hub, Router y Switch </span>
+                                        </h1>
+                                        <p>
+                                            Estos tres son como herramientas que permiten que las computadoras se conecten 
+                                            a redes. Aunque cada uno de estos tres dispositivos tiene funciones diferentes, 
+                                            a veces se combinan en un solo equipo. Pero incluso cuando esto sucede, cada 
+                                            uno tiene una estructura y funciones que son únicas.
+                                        </p>
+                                        <div class="row"> <!-- Modificado -->
+                                            <div class="flip-card">
+                                                <div class="flip-card-inner">
+                                                    <div class="flip-card-front hub">
+                                                        <div>Hub</div>
+                                                    </div>
+                                                    <div class="flip-card-back">
+                                                        <div>El hub es como el mensajero más sencillo de todos en una red de computadoras. Su trabajo es conectar todas las computadoras en una red local. A diferencia del switch y el router, el hub es mucho más simple. Solo recibe datos de una computadora y los envía a todas las demás. Usualmente, los hubs se usan para unir diferentes partes de una red LAN a través de sus puertos</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flip-card">
+                                                <div class="flip-card-inner">
+                                                    <div class="flip-card-front router">
+                                                        <div>Router</div>
+                                                    </div>
+                                                    <div class="flip-card-back">
+                                                        <div>El router es como un cartero inteligente en la red de computadoras. Su trabajo es enviar paquetes de datos de una red a otra. Los routers pueden conectar muchas redes diferentes y suelen trabajar junto con hubs y switches. A menudo tienen herramientas adicionales, como un firewall, que es como un guardia de seguridad para tu red.
+                                                            El router conecta al menos dos redes, normalmente una red local (LAN) y una conexión a tu Proveedor de Servicios de Internet (ISP), que es como la entrada a la autopista del Internet.
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flip-card">
+                                                <div class="flip-card-inner">
+                                                    <div class="flip-card-front switch">
+                                                        <div>Switch</div>
+                                                    </div>
+                                                    <div class="flip-card-back">
+                                                        <div>El switch es como un mensajero especial en la red de computadoras, muy parecido al hub, pero entrega los mensajes de una forma diferente. Cuando un switch recibe información de una computadora, la envía directamente a la computadora que debe recibirla. Es como si el switch creara un camino privado para que el mensaje viaje desde la computadora que lo envía hasta la que lo recibe. De esta manera, la red no se “limita” a enviar información a una sola computadora a la vez, a diferencia del hub.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div> <!-- Modificado -->
+                                        
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                              <label class="form-check-label mb-2">
-                                <select id="Q2">
-                                  <option value="Wrong">...</option>
-                                  <option value="Wrong">A)</option>
-                                  <option value="Wrong">B)</option>
-                                  <option value="Wrong">C)</option>
-                                  <option value="Wrong">D)</option>
-                                  <option value="correct">E)</option>
-                                  <option value="Wrong">F)</option>
-                                  <option value="Wrong">G)</option>
-                                </select>
-                                CPU/Procesador
-                              </label>
-                            </div>
-                            <div>
-                              <label class="form-check-label mb-2">
-                                <select id="Q3">
-                                  <option value="Wrong">...</option>
-                                  <option value="Wrong">A)</option>
-                                  <option value="correct">B)</option>
-                                  <option value="Wrong">C)</option>
-                                  <option value="Wrong">D)</option>
-                                  <option value="Wrong">E)</option>
-                                  <option value="Wrong">F)</option>
-                                  <option value="Wrong">G)</option>
-                                </select>
-                                Teclado
-                              </label>
-                            </div>
-                            <div>
-                              <label class="form-check-label mb-2">
-                                <select id="Q4">
-                                  <option value="Wrong">...</option>
-                                  <option value="Wrong">A)</option>
-                                  <option value="Wrong">B)</option>
-                                  <option value="Wrong">C)</option>
-                                  <option value="Wrong">D)</option>
-                                  <option value="Wrong">E)</option>
-                                  <option value="correct">F)</option>
-                                  <option value="Wrong">G)</option>
-                                </select>
-                                Ratón
-                              </label>
-                            </div>
-                            <div>
-                              <label class="form-check-label mb-2">
-                                <select id="Q5">
-                                  <option value="Wrong">...</option>
-                                  <option value="Wrong">A)</option>
-                                  <option value="Wrong">B)</option>
-                                  <option value="Wrong">C)</option>
-                                  <option value="Wrong">D)</option>
-                                  <option value="Wrong">E)</option>
-                                  <option value="Wrong">F)</option>
-                                  <option value="correct">G)</option>
-                                </select>
-                                Bocinas
-                              </label>
-                            </div>
-                            <div>
-                              <label class="form-check-label mb-2">
-                                <select id="Q6">
-                                  <option value="Wrong">...</option>
-                                  <option value="Wrong">A)</option>
-                                  <option value="Wrong">B)</option>
-                                  <option value="correct">C)</option>
-                                  <option value="Wrong">D)</option>
-                                  <option value="Wrong">E)</option>
-                                  <option value="Wrong">F)</option>
-                                  <option value="Wrong">G)</option>
-                                </select>
-                                Puerto USB
-                              </label>
-                            </div>
-                            <div>
-                              <label class="form-check-label mb-2">
-                                <select id="Q7">
-                                  <option value="Wrong">...</option>
-                                  <option value="Wrong">A)</option>
-                                  <option value="Wrong">B)</option>
-                                  <option value="Wrong">C)</option>
-                                  <option value="correct">D)</option>
-                                  <option value="Wrong">E)</option>
-                                  <option value="Wrong">F)</option>
-                                  <option value="Wrong">G)</option>
-                                </select>
-                                Unidad CD/DVD
-                              </label>
-                            </div>
-                          </div>
                         </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="text-center">
-                      <input
-                        type="button"
-                        class="button"
-                        id="act_1"
-                        value="Revisar"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <!--Botones de avance entre páginas-->
-              <div class="row mrg-btm-20">
-                <div class="col text-center">
-                  <div class="btn-group"></div>
-                </div>
-              </div>
+                        <!--Botones de avance entre páginas-->
+                        <div class="row mrg-btm-20">
+                            <div class="col text-center">
+                                <div class="btn-group"></div>
+                            </div>
+                        </div>
 
-              <!--Widgets de avance de módulo y general-->
-              <div class="card widget-feed">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
-                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                    <div class="progress" style="height: 20px" id="bar">
-                      <div
-                        class="progress-bar bg-info"
-                        role="progressbar"
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style="max-width: 29%"
-                      >
-                        29%
-                      </div>
+                        <!--Widgets de avance de módulo y general-->
+                        <div class="card widget-feed">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
+                                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                                    <div class="progress" style="height: 20px" id="bar">
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 71%">71%</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div id="circlecontainer"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <h3 class="feed-subtitle">Progreso General del Curso</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="row">
-                      <div class="col">
-                        <div id="circlecontainer"></div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="feed-subtitle">
-                          Progreso General del Curso
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+                <!-- Content Wrapper END -->
+
+                <!-- Footer START -->
+                <footer class="content-footer"></footer>
+                <!-- Footer END -->
             </div>
-          </div>
-          <!-- Content Wrapper END -->
-
-          <!-- Footer START -->
-          <footer class="content-footer"></footer>
-          <!-- Footer END -->
+            <!-- Page Container END -->
         </div>
-        <!-- Page Container END -->
-      </div>
     </div>
+
+    <script src="./../navbarHtml.js"></script>
 
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
@@ -296,36 +247,21 @@
     <script src="../../assets/js/progress-circle.js"></script>
 
     <!-- endbuild -->
+
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="../../assets/js/app.js"></script>
     <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
 
-    <!-- endbuild -->
-    <script src="../../assets/js/scripts/modulo2/modulo2-5.js"></script>
-    <script>
-      function showModal(i) {
-        switch (i) {
-          case 1:
-            $("#inputDev").modal({
-              show: true,
-            });
-            break;
-          case 2:
-            $("#outputDev").modal({
-              show: true,
-            });
-            break;
-          case 3:
-            $("#CPU").modal({
-              show: true,
-            });
-            break;
-        }
-      }
+    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+    <script type="text/javascript">
+        show(5 / 27);
     </script>
 
+    <!-- endbuild -->
+
     <!-- Insert your dependencies here -->
-  </body>
+</body>
 </html>
+
