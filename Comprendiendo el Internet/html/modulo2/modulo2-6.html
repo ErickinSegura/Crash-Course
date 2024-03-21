@@ -6,9 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>
-      Tema 2: ¿Cómo navegar por Internet? | CVA - Centro Virtual de Aprendizaje
-    </title>
+    <title>Ejercicio 3 | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
@@ -28,6 +26,88 @@
     />
 
     <!-- page plugins css -->
+    <style>
+      .draggable-elements{
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+      }
+      .draggable{
+        height: 3rem;
+        width: calc(7.5% + 1vw + .5vh) !important;;
+        min-width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(20% + .75vw + .5vh) !important;
+        margin: 0rem .5rem;
+        cursor: move;
+        color: white;
+        transition: opacity 0.2s;
+        background-color: var(--theme-color);
+        border-radius: 30px;
+        border: solid #23806f;
+        z-index: 100;
+      }
+      .draggable:hover{
+        opacity: 0.5;
+      }
+      .droppable{
+        margin-left: 10px;
+        margin-top: 20px;
+        height: 6rem ;
+        width: 14rem ;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        font-size: calc(20% + .75vw + .5vh) !important;
+        font-weight: bold;
+        background-color: rgb(238, 237, 237);
+        color: #23806f;
+        border: 3px dashed #23806f;
+        transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+        align-items: center;
+        border-radius: 20px;
+      }
+      .droppable span{
+        font-size: calc(30% + .75vw + .5vh) !important;
+        pointer-events: none;
+      }
+
+      /* Drag and Drop Style*/
+      .droppable.droppable-hover{
+        border-width: 5px;
+        transform: scale(1.1);
+      }
+      .droppable.dropped {
+        background-color: #cef2d4 !important;
+        border-style: solid;
+      }
+      .droppable.droppedWrong{
+        background-color: rgb(242, 221, 221);
+      }
+      .droppable.dropped span{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+      }
+      .droppable.dropped i{
+        pointer-events: none;
+      }
+      .draggable.dragged{
+        user-select: none;
+        opacity: 0.1;
+        cursor: default;
+      }
+      .draggable.dragged:hover{
+        opacity: 0.1;
+      }
+
+      @media (max-width: 600px) {
+        .draggable-elements {
+          margin: 1.5rem;
+        }
+      }
+    </style>
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -37,6 +117,10 @@
     <link href="../../assets/css/app.css" rel="stylesheet" />
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+    <link
+      href="../../assets/css/modulos/modulo1/traduccion.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="header-info side-nav-dark">
@@ -53,60 +137,31 @@
           <!-- Header END -->
 
           <!-- Content Wrapper START -->
+
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
-
-              <div class="card">
-                <div class="card-horizon">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="pdd-vertical-30 pdd-horizon-25">
-                          <h1 class="mrg-btm-20 card-title">
-                            <span class="badge badge-light tema-n"
-                              >Tema 1
-                            </span>
-                            ¿Cómo funciona una dirección IP?
-                          </h1>
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <p>
-                                El
-                                <b
-                                  >router es el que se encarga de asignar las
-                                  IPs</b
-                                >
-                                a los diferentes dispositivos que se van
-                                conectando. Gracias a esto es imposible que dos
-                                equipos tengan la misma IP. Por esta misma
-                                razón, no es posible mantener conexiones fijas
-                                entre varios dispositivos, como carpetas
-                                compartidas e impresoras.
-                              </p>
-                              <p>
-                                Puesto que cada vez que se conecten los equipos
-                                tendrán una <b>IP diferente</b>; esto es lo que
-                                sucede con las <b>IPs dinámicas</b>. Si, en
-                                cambio, hablamos de una <b>IP estática</b>, como
-                                su nombre lo indica, estaríamos hablando de una
-                                <b>dirección IP que no cambia</b>, la cual sólo
-                                es posible haciendo una configuración en el
-                                dispositivo.
-                              </p>
-                            </div>
-                            <div class="col-sm-12">
-                              <p>
-                                Las páginas web se crean con archivos. Los
-                                cuáles son almacenados dentro de una computadora
-                                que los transforma en la interfaz que todos los
-                                usuarios pueden ver en Internet. La computadora
-                                que almacena la información de los sitios web es
-                                un servidor, que a su vez cuenta con una o más
-                                direcciones IP que lo identifican, por ejemplo
-                                “74.125.224.72”.
-                              </p>
-                            </div>
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-horizon">
+                      <div class="image-container col-md-5">
+                        <div
+                          class="background-holder has-content"
+                          style="
+                            background-image: url('../../assets/images/course/modulo1/m1-7/shutterstock_769335463.jpg');
+                          "
+                        >
+                          <!-- https://www.shutterstock.com/image-photo/take-exam-write-paper-on-blue-1750211525 -->
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-7 ml-auto">
+                          <div class="card-block">
+                            <h1 class="mrg-btm-20 card-title">Ejercicio. Relacionar y comprender</h1>
+                            <p>
+                              Lee los enunciados y relaciona la palabra faltante.
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -115,49 +170,93 @@
                 </div>
               </div>
 
-              <!--Botones de avance entre páginas-->
-              <div class="row mrg-btm-20">
-                <div class="col text-center">
-                  <div class="btn-group"></div>
-                </div>
-              </div>
+              <div class="card" style="padding-bottom: 50px;">
+              <div style="margin: 30px 50px;">
+                <p>
+                  <b>¡Ha llegado el momento de poner en práctica lo que has aprendido en esta lección!</b>
+                  Aquí encontrarás ejercicios de repaso que contienen un poco de cada una de las secciones anteriores.
+                </p>
+                <p>
+                  Lee cuidadosamente y completa las oraciones. Haz clic en las palabras de color azul
+                  y arrastralos a la casilla punteada, si la respuesta es correcta el color de la casilla
+                  cambiará a azul, <b>¡Tú puedes!</b>
+                </p>
+                <section class="draggable-elements">
+                  <i class="draggable" draggable="true" id="schnell">schnell</i>
+                  <i class="draggable" draggable="true" id="alt">alt</i>
+                  <i class="draggable" draggable="true" id="gefährlich">gefährlich</i>
+                </section>
+                <section class="draggable-elements">
+                  <i class="draggable" draggable="true" id="ungesund">ungesund</i>
+                  <i class="draggable" draggable="true" id="jung">jung</i>
+                  <i class="draggable" draggable="true" id="hell">hell</i>
+                </section>
+                <section class="draggable-elements">
+                  <i class="draggable" draggable="true" id="gesund">gesund</i>
+                  <i class="draggable" draggable="true" id="dunkel">dunkel</i>
+                  <i class="draggable" draggable="true" id="langsam">langsam</i>
+                </section>
 
-              <!--Widgets de avance de módulo y general-->
-              <div class="card widget-feed">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
-                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                    <div class="progress" style="height: 20px" id="bar">
-                      <div
-                        class="progress-bar bg-info"
-                        role="progressbar"
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style="max-width: 71%"
-                      >
-                        71%
-                      </div>
+                <section class="droppable-elements" style="display: flex; justify-content: center;">
+                  <div class="droppable" data-draggable-id="alt"><span name="alt">Die Oma ist ____.</span></div>
+                  <div class="droppable" data-draggable-id="jung"><span name="jung">Der Junge ist ____.</span></div>
+                  <div class="droppable" data-draggable-id="gesund"><span name="gesund">Der Apfel ist ____.</span></div>
+                </section>
+                <section class="droppable-elements" style="display: flex; justify-content: center;">
+                  <div class="droppable" data-draggable-id="ungesond"><span name="ungesond">Die Süßigkeiten ____.</span></div>
+                  <div class="droppable" data-draggable-id="langsam"><span name="langsam">Die Schnecke kriecht ____.</span></div>
+                  <div class="droppable" data-draggable-id="schnell"><span name="schnell">Die Schnecke kriecht ____.</span></div>
+                </section>
+                <section class="droppable-elements" style="display: flex; justify-content: center;">
+                  <div class="droppable" data-draggable-id="hell"><span name="hell">Die Sonne ist ____.</span></div>
+                  <div class="droppable" data-draggable-id="dunkel"><span name="dunkel">Die Nacht ist ____.</span></div>
+                  <div class="droppable" data-draggable-id="gefährlich"><span name="gefährlich">Der Löwe ist ____.</span></div>
+                </section>
+            </div>
+            </div>
+            <!--Botones de avance entre páginas-->
+            <div class="row mrg-btm-20">
+              <div class="col text-center">
+                <div class="btn-group"></div>
+              </div>
+            </div>
+
+            <!--Widgets de avance de módulo y general-->
+            <div class="card widget-feed">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h1 class="feed-title tag tag-info">Módulo 3</h1>
+                  <h3 class="feed-subtitle">Tu Progreso</h3>
+                  <div class="progress" style="height: 20px" id="bar">
+                    <div
+                      class="progress-bar bg-info"
+                      role="progressbar"
+                      aria-valuenow="33"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="max-width: 33%"
+                    >
+                      33%
                     </div>
                   </div>
-                  <div class="col-lg-4">
-                    <div class="row">
-                      <div class="col">
-                        <div id="circlecontainer"></div>
-                      </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="row">
+                    <div class="col">
+                      <div id="circlecontainer"></div>
                     </div>
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="feed-subtitle">
-                          Progreso General del Curso
-                        </h3>
-                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <h3 class="feed-subtitle">
+                        Progreso General del Curso
+                      </h3>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
           </div>
           <!-- Content Wrapper END -->
 
@@ -168,8 +267,6 @@
         <!-- Page Container END -->
       </div>
     </div>
-
-    <script src="./../navbarHtml.js"></script>
 
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
@@ -191,13 +288,64 @@
     <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
 
-    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
-    <script type="text/javascript">
-      show(9 / 27);
-    </script>
-
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
+    <!-- Drag and drop mobile dependencies--><!-- 1. jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.8.17/jquery-ui.js" integrity="sha256-XIz1bXt5gQu/CwybHyRVTxWw4RpAqaGVG6lfsIpYQXw=" crossorigin="anonymous"></script>
+      
+    <!-- 2. Incluir touch punch -->
+    <script src="../../assets/js/extras/jquery.ui.touch-punch.min.js"></script>
+        <!-- Drag and drop SCRIPT STARTS -->
+        <script>
+          (function($) {
+            if (!$.curCSS) {
+            $.curCSS = $.css;
+          }})(jQuery);
+          jQuery.browser = {};
+          (function () {
+            jQuery.browser.msie = false;
+            jQuery.browser.version = 0;
+            if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+              jQuery.browser.msie = true;
+              jQuery.browser.version = RegExp.$1;
+            }
+          })();
+        </script>
+        <script type="text/javascript">
+          var idDraggable;
+          
+          $(".draggable").draggable({
+            cursor: 'move',
+            revert: true,
+            start: function() {
+              idDraggable=this.id;
+            },
+            stop: function() {
+            }
+          });
+          $(".droppable").droppable({
+            hoverClass:'droppable-hover',
+            tolerance: "pointer",
+            drop: function(event,ui){
+              var attrDroppable = this.getAttribute("data-draggable-id");
+              if(idDraggable === attrDroppable){
+                this.classList.add("dropped");
+                const draggableElement=document.getElementById(idDraggable);
+                const droppableElement=document.getElementsByName(idDraggable);
+                const txt= droppableElement[0].innerHTML.replace('____', idDraggable);
+                droppableElement[0].innerHTML=txt;
+                
+                draggableElement.classList.add("dragged");
+                draggableElement.setAttribute("draggable", "false");
+              } else{
+                this.classList.add("droppedWrong");
+              }
+            }
+          });
+        </script>
+        <!-- Drag and drop SCRIPT ENDS -->
+    
   </body>
 </html>
+
