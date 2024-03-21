@@ -1,33 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
-    />
-    <title>
-      Tema 2: ¿Cómo navegar por Internet? | CVA - Centro Virtual de Aprendizaje
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no" />
+    <title>Módulo 2: ¿Cómo usar el Internet? | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
 
     <!-- plugins css -->
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
-    />
-
-    <!-- page plugins css -->
+    <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -37,256 +21,216 @@
     <link href="../../assets/css/app.css" rel="stylesheet" />
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
-  </head>
 
-  <body class="header-info side-nav-dark">
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin: 0 -5px;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: calc(45%);
+            margin: 10px 5px; /* Modificado */
+            height: 170px;
+            perspective: 1000px;
+            flex: 0 0 auto;
+            align-items: center; 
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 10px 5px; 
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            font-weight: bold; /* Negrita */
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-front.hub {
+            background-image: url('../../assets/images/course/modulo2/Network-Switch.jpeg.webp');
+        }
+
+        .flip-card-front.router {
+            background-image: url('../../assets/images/course/modulo2/1100207695.jpg');
+        }
+
+        .flip-card-front.switch {
+            background-image: url('../../assets/images/course/modulo2/switch-fast-ethernet-de-5-puertos.webp');
+        }
+
+        .flip-card-front.direccion-ip {
+            background-image: url('../../assets/images/course/modulo2/88c734f8-2777-41e3-8f52-071704b9c721.jpeg');
+        }
+
+        .flip-card-front.DNS {
+            background-image: url('../../assets/images/course/modulo2/798acb8b-acf4-42ca-8062-5a8101aa85bb.jpeg');
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            font-weight: bold; /* Negrita */
+        }
+    </style>
+</head>
+
+<body class="header-info side-nav-dark">
     <div class="app">
-      <div class="layout">
-        <!-- Side Nav START -->
-        <div class="side-nav" id="sideNav"></div>
-        <!-- Side Nav END -->
+        <div class="layout">
+            <!-- Side Nav START -->
+            <div class="side-nav" id="sideNav"></div>
+            <!-- Side Nav END -->
 
-        <!-- Page Container START -->
-        <div class="page-container">
-          <!-- Header START -->
-          <div class="header navbar"></div>
-          <!-- Header END -->
+            <!-- Page Container START -->
+            <div class="page-container">
+                <!-- Header START -->
+                <div class="header navbar"></div>
+                <!-- Header END -->
 
-          <!-- Content Wrapper START -->
-          <div class="main-content">
-            <div class="container-fluid px-0 px-sm-3">
-              <!-- Your content goes here -->
+                <!-- Content Wrapper START -->
+                <div class="main-content">
+                    <div class="container-fluid px-0 px-sm-3">
+                        <!-- Your content goes here -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="flechas">
+                                    <div class="flecha-izquierda">
+                                        <a href="../modulo1/modulo1-1.html" class="modulo-anterior">
+                                            <i class="ei ei-left-arrow mr-2"></i>
+                                            <span> Módulo Anterior</span>
+                                        </a>
+                                    </div>
+                                    <div class="flecha-derecha">
+                                        <a href="../modulo3/modulo3-1.html" class="modulo-siguiente">
+                                            <span> Módulo Siguiente</span>
+                                            <i class="ei ei-right-arrow ml-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-horizon">
+                                        <h1 class="mrg-btm-20 card-title">
+                                            <span class="badge badge-light tema-n">Tema 1: Hub, Router y Switch </span>
+                                        </h1>
+                                        <p>
+                                            Estos tres son como herramientas que permiten que las computadoras se conecten 
+                                            a redes. Aunque cada uno de estos tres dispositivos tiene funciones diferentes, 
+                                            a veces se combinan en un solo equipo. Pero incluso cuando esto sucede, cada 
+                                            uno tiene una estructura y funciones que son únicas.
+                                        </p>
+                                        <div class="row"> <!-- Modificado -->
+                                            <div class="flip-card">
+                                                <div class="flip-card-inner">
+                                                    <div class="flip-card-front hub">
+                                                        <div>Hub</div>
+                                                    </div>
+                                                    <div class="flip-card-back">
+                                                        <div>El hub es como el mensajero más sencillo de todos en una red de computadoras. Su trabajo es conectar todas las computadoras en una red local. A diferencia del switch y el router, el hub es mucho más simple. Solo recibe datos de una computadora y los envía a todas las demás. Usualmente, los hubs se usan para unir diferentes partes de una red LAN a través de sus puertos</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flip-card">
+                                                <div class="flip-card-inner">
+                                                    <div class="flip-card-front router">
+                                                        <div>Router</div>
+                                                    </div>
+                                                    <div class="flip-card-back">
+                                                        <div>El router es como un cartero inteligente en la red de computadoras. Su trabajo es enviar paquetes de datos de una red a otra. Los routers pueden conectar muchas redes diferentes y suelen trabajar junto con hubs y switches. A menudo tienen herramientas adicionales, como un firewall, que es como un guardia de seguridad para tu red.
+                                                            El router conecta al menos dos redes, normalmente una red local (LAN) y una conexión a tu Proveedor de Servicios de Internet (ISP), que es como la entrada a la autopista del Internet.
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flip-card">
+                                                <div class="flip-card-inner">
+                                                    <div class="flip-card-front switch">
+                                                        <div>Switch</div>
+                                                    </div>
+                                                    <div class="flip-card-back">
+                                                        <div>El switch es como un mensajero especial en la red de computadoras, muy parecido al hub, pero entrega los mensajes de una forma diferente. Cuando un switch recibe información de una computadora, la envía directamente a la computadora que debe recibirla. Es como si el switch creara un camino privado para que el mensaje viaje desde la computadora que lo envía hasta la que lo recibe. De esta manera, la red no se “limita” a enviar información a una sola computadora a la vez, a diferencia del hub.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div> <!-- Modificado -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-              <div class="card" style="padding: 30px">
-                <h1 class="mrg-btm-20 card-title">
-                  <span class="badge badge-light tema-n">Tema 1 </span>
-                  Hub vs Router vs Switch
-                </h1>
-                <p>
-                  Los tres son dispositivos de hardware que posibilitan la
-                  conexión de computadoras a redes. Las funciones de estos 3
-                  tipos de dispositivos, aun siendo diferentes unas de otras, a
-                  veces son integradas en un mismo equipo pero, a pesar de esta
-                  posibilidad, su estructura y sus funciones se diferencian
-                  entre sí.
-                </p>
-                <div class="alert alert-secondary" style="width: fit-content">
-                  <i class="icon ti-mouse-alt"></i> Haz clic en cada botón para
-                  ver la información.
+                        <!--Botones de avance entre páginas-->
+                        <div class="row mrg-btm-20">
+                            <div class="col text-center">
+                                <div class="btn-group"></div>
+                            </div>
+                        </div>
+
+                        <!--Widgets de avance de módulo y general-->
+                        <div class="card widget-feed">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
+                                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                                    <div class="progress" style="height: 20px" id="bar">
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 71%">71%</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div id="circlecontainer"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <h3 class="feed-subtitle">Progreso General del Curso</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="pill-info">
-                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active dashed-button"
-                        id="pills-hub-tab"
-                        data-toggle="pill"
-                        href="#pills-hub"
-                        role="tab"
-                        aria-controls="pills-hub"
-                        aria-selected="true"
-                        >Hub</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link dashed-button"
-                        id="pills-router-tab"
-                        data-toggle="pill"
-                        href="#pills-router"
-                        role="tab"
-                        aria-controls="pills-router"
-                        aria-selected="false"
-                        >Router</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link dashed-button"
-                        id="pills-switch-tab"
-                        data-toggle="pill"
-                        href="#pills-switch"
-                        role="tab"
-                        aria-controls="pills-switch"
-                        aria-selected="false"
-                        >Switch</a
-                      >
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="pills-tabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="pills-hub"
-                      role="tabpanel"
-                      aria-labelledby="pills-hub-tab"
-                    >
-                      <div class="row">
-                        <div class="col-md-4">
-                          <img
-                            src="../../assets/images/course/modulo2/16.jpg"
-                            alt="Un hub"
-                          />
-                        </div>
-                        <div class="col-md-8">
-                          <p>
-                            El <b>hub</b> es el dispositivo más sencillo de
-                            todos. Un Hub tiene la función de
-                            <b>interconectar los ordenadores de una red local</b
-                            >. Comparado con el switch y el router, es mucho más
-                            simple, ya que sólo se dedica a recibir datos
-                            procedentes de un ordenador para transmitirlo a los
-                            demás.
-                            <b>
-                              Normalmente son usados para conectar segmentos de
-                              una red LAN a través de sus diferentes puertos.
-                            </b>
-                          </p>
-                          <p>
-                            Específicamente, los hubs se utilizan para la
-                            <b
-                              >creación de redes locales con topología tipo
-                              estrella</b
-                            >, en los cuáles se interconectan el resto de los
-                            equipos, así como para realizar
-                            <b>análisis de redes</b>, ya que al solamente
-                            repetir y repartir los mismos datos, se puede
-                            analizar fácilmente el tráfico e información que
-                            fluye por la red. Actualmente, los hubs están siendo
-                            reemplazados por los switchs, debido a la diferencia
-                            de precios.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="pills-router"
-                      role="tabpanel"
-                      aria-labelledby="pills-router-tab"
-                    >
-                      <div class="row">
-                        <div class="col-md-4">
-                          <img
-                            src="../../assets/images/course/modulo2/4.jpg"
-                            alt="Un router"
-                          />
-                        </div>
-                        <div class="col-md-8">
-                          <p>
-                            El <b>router</b> es el dispositivo que se encarga de
-                            <b>reenviar los paquetes entre distintas redes</b>.
-                            Los routers son capaces de interconectar varias
-                            redes y generalmente trabajan en conjunto con hubs y
-                            switchs. Suelen poseer recursos extras, como
-                            firewall, por ejemplo. El equipo conecta al menos
-                            dos redes, normalmente una red LAN y una conexión
-                            WAN hacia tu ISP.
-                          </p>
-                          <p>
-                            <b>Usa cabeceras y tablas de enrutamiento</b> para
-                            determinar el mejor camino para que el paquete
-                            llegue a su destino, usando protocolos como el ICMP
-                            para comunicarse con otros routers y así descubrir
-                            el camino más eficiente entre dos nodos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="pills-switch"
-                      role="tabpanel"
-                      aria-labelledby="pills-switch-tab"
-                    >
-                      <div class="row">
-                        <div class="col-md-4">
-                          <img
-                            src="../../assets/images/course/modulo2/2.jpg"
-                            alt="Un switch"
-                          />
-                        </div>
-                        <div class="col-md-8">
-                          <p>
-                            El <b>switch</b> es un aparato muy semejante al hub,
-                            pero envía los datos de manera diferente. A través
-                            de un switch aquella información proveniente del
-                            ordenador de origen es enviada al ordenador de
-                            destino. Básicamente, los switchs
-                            <b
-                              >crean una especie de canal de comunicación
-                              exclusiva entre el origen y el destino.</b
-                            >
-                            Así la red no queda "limitada" a un solo equipo en
-                            el envío de información, a diferencia del hub.
-                          </p>
-                          <p>
-                            El funcionamiento del dispositivo aumenta la
-                            respuesta de la red ya que la comunicación está
-                            siempre disponible, excepto cuando dos o más
-                            ordenadores intentan enviar datos simultáneamente a
-                            la misma máquina.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- Content Wrapper END -->
 
-              <!-- Kinds of plague with images -->
-
-              <!--Botones de avance entre páginas-->
-              <div class="row mrg-btm-20">
-                <div class="col text-center">
-                  <div class="btn-group"></div>
-                </div>
-              </div>
-
-              <!--Widgets de avance de módulo y general-->
-              <div class="card widget-feed">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
-                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                    <div class="progress" style="height: 20px" id="bar">
-                      <div
-                        class="progress-bar bg-info"
-                        role="progressbar"
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style="max-width: 71%"
-                      >
-                        71%
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="row">
-                      <div class="col">
-                        <div id="circlecontainer"></div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="feed-subtitle">
-                          Progreso General del Curso
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- Footer START -->
+                <footer class="content-footer"></footer>
+                <!-- Footer END -->
             </div>
-          </div>
-          <!-- Content Wrapper END -->
-
-          <!-- Footer START -->
-          <footer class="content-footer"></footer>
-          <!-- Footer END -->
+            <!-- Page Container END -->
         </div>
-        <!-- Page Container END -->
-      </div>
     </div>
 
     <script src="./../navbarHtml.js"></script>
@@ -313,11 +257,11 @@
 
     <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
     <script type="text/javascript">
-      show(7 / 27);
+        show(5 / 27);
     </script>
 
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-  </body>
+</body>
 </html>
