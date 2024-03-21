@@ -6,7 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>Ejercicio 2 | CVA - Centro Virtual de Aprendizaje</title>
+    <title>
+      Tema 2: ¿Cómo navegar por Internet? | CVA - Centro Virtual de Aprendizaje
+    </title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
@@ -26,94 +28,6 @@
     />
 
     <!-- page plugins css -->
-    <style>
-      .draggable-elements{
-        display: flex;
-        justify-content: center;
-        margin: 2rem;
-      }
-      .draggable{
-        height: 3rem;
-        width: fit-content;
-        min-width: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: calc(20% + .75vw + .5vh) !important;
-        margin: 0rem .5rem;
-        cursor: move;
-        color: white;
-        transition: opacity 0.2s;
-        background-color: var(--theme-color);
-        border-radius: 30px;
-        border: solid #23806f;
-        z-index: 100;
-        padding: 0 5%;
-      }
-      .draggable:hover{
-        opacity: 0.5;
-      }
-      .droppable{
-        margin-left: 10px;
-        margin-top: 20px;
-        height: 100%;
-        width: 200px;
-        padding: 0 5%;
-        justify-content: center;
-        text-align: center;
-        font-size: calc(20% + .75vw + .5vh) !important;
-        font-weight: bold;
-        background-color: rgb(238, 237, 237);
-        border: 3px dashed var(--theme-color);
-        transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
-        align-items: center;
-        border-radius: 20px;
-      }
-      .droppable span{
-        font-size: calc(20% + .75vw + .5vh) !important;
-        pointer-events: none;
-      }
-
-      /* Drag and Drop Style*/
-      .droppable.droppable-hover{
-        border-width: 5px;
-        transform: scale(1.1);
-      }
-      .droppable.dropped{
-        background-color: #b2ebbb !important;
-        border-style: solid;
-        color: var(--theme-color);
-      }
-      .droppable.dropped span{
-        font-size: 1rem;
-        margin-top: 0.5rem;
-      }
-      .droppable.dropped i{
-        pointer-events: none;
-      }
-      .draggable.dragged{
-        user-select: none;
-        opacity: 0.1;
-        cursor: default;
-      }
-      .draggable.dragged:hover{
-        opacity: 0.1;
-      }
-
-      @media (max-width: 600px) {
-        .draggable-elements {
-          margin: 1.5rem;
-        }
-        .draggable{
-          font-size: calc(30% + .75vw + .5vh) !important;
-          padding: 0 30px;
-        }
-        td, th{
-        font-size: calc(90% + .75vw + .5vh);
-        }
-      }
-
-    </style>
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -142,28 +56,34 @@
           <div class="main-content">
             <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
-              <div class="row">
-                <div class="col">
-                  <div class="card">
-                    <div class="card-horizon">
-                      <div class="image-container col-md-5">
-                        <div
-                          class="background-holder has-content"
-                          style="
-                            background-image: url('../../assets/images/course/modulo1/m1-7/shutterstock_769335463.jpg');
-                          "
-                        >
-                          <!-- https://www.shutterstock.com/image-photo/take-exam-write-paper-on-blue-1750211525 -->
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-7 ml-auto">
-                          <div class="card-block">
-                            <h1 class="mrg-btm-20 card-title">Ejercicio. Completa</h1>
-                            <p>
-                              Ordenar las palabras en las tres categorías de comida con su artículo
-                            </p>
-                          </div>
+
+              <div class="card">
+                <div class="card-horizon">
+                  <div class="image-container col-md-5">
+                    <div
+                      class="background-holder has-content"
+                      style="
+                        background-image: url('../../assets/images/course/modulo2/2485c7d5-9286-4c0a-8ad8-2ec7e4f6952f.jpeg');
+                      "
+                    ></div>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-7 ml-auto">
+                        <div class="pdd-vertical-30 pdd-horizon-25">
+                          <h1 class="mrg-btm-20 card-title">
+                            <span class="badge badge-light tema-n"
+                              >Tema 1
+                            </span>
+                            ¿Qué es el Domain Name System (DNS)?
+                          </h1>
+                          <p>
+                            El DNS (Sistema de Nombres de Dominio) es como la “guía telefónica de Internet”. Su función es traducir los nombres de dominio (como “www.ionos.es”) en direcciones IP de servidores. Así, podemos usar nombres fáciles de recordar en lugar de las complicadas direcciones IP.
+1.	Antes del DNS:
+o	Imagina que en los inicios de Internet, las computadoras se comunicaban directamente mediante direcciones IP, como si llamaras a un amigo por teléfono y necesitaras saber su número.
+o	No había dominios ni DNS, y era un proceso más complejo.
+
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -171,72 +91,72 @@
                 </div>
               </div>
 
-              <div class="card card-block">
-                <div class="pdd-horizon-15 pdd-vertical-20">
-                  <section class="draggable-elements">
-                    <i  class="draggable widget" draggable="true" id="3">die Salami</i>
-                    <i  class="draggable widget" draggable="true" id="1">der Käse</i>
-                    
-                    <i  class="draggable widget" draggable="true" id="2">die Orange</i>
-                    <i  class="draggable widget" draggable="true" id="1">die Butter</i>
-                  </section>
-                  <section class="draggable-elements">
-                    <i  class="draggable widget" draggable="true" id="3">der Schinken</i>
-                    <i  class="draggable widget" draggable="true" id="2">die Tomate</i>
-                    
-                    <i  class="draggable widget" draggable="true" id="2">der Apfel</i>
-                    <i  class="draggable widget" draggable="true" id="1">die Milch</i>
-                  </section>
-                  <section class="draggable-elements">
-                    <i  class="draggable widget" draggable="true" id="2">die Möhre</i>
-                    <i  class="draggable widget" draggable="true" id="2">die Banane</i>
-                    
-                    <i  class="draggable widget" draggable="true" id="1">der Joghurt</i>
-                    <i  class="draggable widget" draggable="true" id="3">der Hähnchen</i>
-                  </section>
-                  <div style="margin:auto; width: fit-content;">
-                    <table class="table table-cell droppable" data-draggable-id="1" style="width: 270px; margin-top: 2%; display: inline-table;">
-                      <thead style="background-color: #23806f;">
-                        <tr>
-                          <th scope="col" style="color: white;" class="text-center">Milchprodukten</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                      </tbody>
-                    </table>
-                    <table class="table table-cell droppable" data-draggable-id="2" style="width: 270px; margin-top: 2%; display: inline-table;">
-                      <thead style="background-color: #23806f;">
-                        <tr>
-                          <th scope="col" style="color: white;" class="text-center">Obst und Gemüse</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                      </tbody>
-                    </table>
-                    <table class="table table-cell droppable" data-draggable-id="3" style="width: 270px; margin-top: 2%;  display: inline-table;">
-                      <thead style="background-color: #23806f;">
-                        <tr>
-                          <th scope="col" style="color: white;" class="text-center">Fleisch und Wurst</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                      </tbody>
-                    </table>
+              <div class="card">
+                <div class="card-horizon">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="pdd-vertical-30 pdd-horizon-25">
+                          <p>
+                            Cómo funciona el DNS?
+o	Cuando escribes un dominio en tu navegador (por ejemplo, “www.ionos.es”), el DNS entra en acción.
+o	El proceso de resolución de nombres DNS se descompone en varios pasos:
+1.	Introduces una dirección web en el navegador.
+2.	Tu proveedor de servicios de Internet (ISP) gestiona un DNS resolver que recibe tu consulta.
+3.	El resolver reenvía la consulta a un servidor DNS.
+4.	Este servidor busca en otros servidores DNS hasta encontrar el nombre de dominio deseado.
+5.	Finalmente, se obtiene la dirección IP correspondiente y se la proporciona al navegador.
+o	Así, el DNS permite que nos comuniquemos en la red sin necesidad de conocer las direcciones IP.
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
+              <div class="card">
+                <div class="card-horizon">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="pdd-vertical-30 pdd-horizon-25">
+                          <p>
+                            3.	Enlace entre dominios y direcciones IP:
+o	Los dominios (como “www.ionos.es”) se enlazan a las direcciones IP de los servidores mediante el DNS.
+o	Cuando escribes un dominio en el navegador, el DNS busca en varios servidores hasta encontrar la dirección IP correcta.
+o	Esto permite acceder a la página web deseada.
+4.	Beneficios del DNS:
+o	Simplifica el acceso a sitios web.
+o	Facilita la navegación al usar nombres en lugar de números.
+o	Es fundamental para la comunicación en Internet.
 
+
+                          </p>
+
+                          <p>
+                            En resumen, el DNS es como la guía que traduce nombres de dominio en direcciones IP, permitiéndonos navegar por la web de manera más sencilla. 🌐🔍
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Botones de avance entre páginas-->
               <div class="row mrg-btm-20">
                 <div class="col text-center">
                   <div class="btn-group"></div>
                 </div>
               </div>
 
+              <!--Widgets de avance de módulo y general-->
               <div class="card widget-feed">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 5</h1>
+                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
                     <h3 class="feed-subtitle">Tu Progreso</h3>
                     <div class="progress" style="height: 20px" id="bar">
                       <div
@@ -245,9 +165,9 @@
                         aria-valuenow="25"
                         aria-valuemin="0"
                         aria-valuemax="100"
-                        style="max-width: 4%"
+                        style="max-width: 71%"
                       >
-                        4%
+                        71%
                       </div>
                     </div>
                   </div>
@@ -279,15 +199,17 @@
       </div>
     </div>
 
+    <script src="./../navbarHtml.js"></script>
+
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
     <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../assets/vendors/PACE/pace.min.js"></script>
     <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
+    <!-- Progress plugins -->
     <script src="../../assets/js/progressbar.js"></script>
     <script src="../../assets/js/progress-circle.js"></script>
 
@@ -296,75 +218,16 @@
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
 
     <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
     <script type="text/javascript">
-      show(0.02);
+      show(10 / 27);
     </script>
 
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <!-- Drag and drop mobile dependencies--><!-- 1. jQuery UI -->
-    <script src="https://code.jquery.com/ui/1.8.17/jquery-ui.js" integrity="sha256-XIz1bXt5gQu/CwybHyRVTxWw4RpAqaGVG6lfsIpYQXw=" crossorigin="anonymous"></script>
-      
-    <!-- 2. Incluir touch punch -->
-    <script src="../../assets/js/extras/jquery.ui.touch-punch.min.js"></script>
-    <!-- Drag and drop SCRIPT STARTS -->
-    <script>
-      (function($) {
-        if (!$.curCSS) {
-        $.curCSS = $.css;
-      }})(jQuery);
-      jQuery.browser = {};
-      (function () {
-        jQuery.browser.msie = false;
-        jQuery.browser.version = 0;
-        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
-          jQuery.browser.msie = true;
-          jQuery.browser.version = RegExp.$1;
-        }
-      })();
-    </script>
-    <script type="text/javascript">
-      var idDraggable;
-      var textD;
-      
-      $(".draggable").draggable({
-        cursor: 'move',
-        revert: true,
-        start: function() {
-          idDraggable=this.id;
-        },
-        drag: function(event, ui) {
-          textD=$(this).text();
-        }
-      });
-      $(".droppable").droppable({
-        hoverClass:'droppable-hover',
-        tolerance: "pointer",
-        drop: function(event,ui){
-          var attrDroppable = this.getAttribute("data-draggable-id");
-          if(idDraggable === attrDroppable){
-            this.classList.add("dropped");
-
-            const draggableElement=document.getElementById(idDraggable);
-            const droppableElement=document.getElementsByName(idDraggable);
-
-            //<i  class="draggable widget" draggable="true" id="1">Palabra ejemplo</i>
-            //table-hover-anim
-            console.log(textD);
-            var textInTable='<tr class="droppped table-hover-anim"><td>'+textD+'</td></tr>';
-            console.log(textInTable);
-            $(this).find('tbody').append(textInTable);
-
-            ui.draggable.addClass('dragged');
-            ui.draggable.attr("draggable", "false");
-          }
-        }
-      });
-    </script>
   </body>
 </html>
-
