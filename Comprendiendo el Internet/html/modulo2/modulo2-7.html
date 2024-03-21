@@ -6,7 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>Tarea: Actividades | CVA - Centro Virtual de Aprendizaje</title>
+    <title>
+      Tema 2: ¿Cómo navegar por Internet? | CVA - Centro Virtual de Aprendizaje
+    </title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
@@ -26,10 +28,6 @@
     />
 
     <!-- page plugins css -->
-    <link
-      href="../../assets/css/modulos/modulo2/cardQuiz.css"
-      rel="stylesheet"
-    />
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -41,7 +39,7 @@
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
   </head>
 
-  <body class="header-info side-nav-dark" onload="NextQuestion(0)">
+  <body class="header-info side-nav-dark">
     <div class="app">
       <div class="layout">
         <!-- Side Nav START -->
@@ -56,139 +54,155 @@
 
           <!-- Content Wrapper START -->
           <div class="main-content">
-            <div class="container-fluid">
+            <div class="container-fluid px-0 px-sm-3">
               <!-- Your content goes here -->
+
               <div class="card">
-                <div class="card-block">
-                  <h1 class="card-title">Ejercicio 2</h1>
+                <div class="card-horizon">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="pdd-vertical-30 pdd-horizon-25">
+                          <h1 class="mrg-btm-20 card-title">
+                            <span class="badge badge-light tema-n"
+                              >Tema 1
+                            </span>
+                            Tipos de dirección IP
+                          </h1>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div
+                                class="alert alert-secondary"
+                                style="width: fit-content"
+                              >
+                                <i class="icon ti-mouse-alt"></i> Haz clic en
+                                cada botón para ver la información.
+                              </div>
+                              <div class="pill-info mb-2">
+                                <ul class="nav nav-pills" role="tablist">
+                                  <li class="nav-item">
+                                    <a
+                                      href="#razon-1"
+                                      class="nav-link active dashed-button"
+                                      role="tab"
+                                      data-toggle="tab"
+                                      >Dirección Ip pública</a
+                                    >
+                                  </li>
+                                  <li class="nav-item">
+                                    <a
+                                      href="#razon-2"
+                                      class="nav-link dashed-button"
+                                      role="tab"
+                                      data-toggle="tab"
+                                      >Dirección Ip privada</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="tab-content">
+                              <div
+                                role="tabpanel"
+                                class="tab-pane fade in active"
+                                id="razon-1"
+                              >
+                                <div class="pdd-horizon-15">
+                                  <div class="row">
+                                    <div class="card">
+                                      <div class="card-horizon">
+                                        <div
+                                          class="image-container col-md-4 d-none d-md-block"
+                                        >
+                                          <div
+                                            class="background-holder has-content"
+                                            style="
+                                              background-image: url('../../assets/images/course/modulo2/db0dc650-63a0-4c87-bd74-a247cb3cfe53.jpeg');
+                                            "
+                                          ></div>
+                                        </div>
+                                        <div class="col-md-8 ml-auto">
+                                          <div class="card-block">
+                                            <h2 class="mrg-btm-20 card-title">
+                                              Dirección IP pública
+                                            </h2>
+                                            <p>
+                                              <ul>
+                                                <li>Las direcciones IP públicas son como las direcciones de las casas en Internet. Son visibles para cualquier persona que navegue en la red.</li>
+                                                <li>Función: Identifican a los usuarios en la gran red global.</li>
+                                                <li>Destinatarios: Están destinadas a los servidores que funcionan las 24 horas del día, como los servidores de páginas web.</li>
+                                                <li>    Ejemplo: Imagina que es como el número de tu casa, pero para dispositivos en Internet. Por ejemplo, “74.125.224.72” es una dirección IP pública de un servidor de Google.</li>
+                                              </ul>
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                role="tabpanel"
+                                class="tab-pane fade"
+                                id="razon-2"
+                              >
+                                <div class="pdd-horizon-15">
+                                  <div class="row">
+                                    <div class="card">
+                                      <div class="card-horizon">
+                                        <div
+                                          class="image-container col-md-4 d-none d-md-block"
+                                        >
+                                          <div
+                                            class="background-holder has-content"
+                                            style="
+                                              background-image: url('../../assets/images/course/modulo2/a55fc139-0b2c-4ff8-b240-6edc2a8cc6b2.jpeg');
+                                            "
+                                          ></div>
+                                        </div>
+                                        <div class="container-fluid">
+                                          <div class="row">
+                                            <div class="col-md-8 ml-auto">
+                                              <div class="card-block">
+                                                <h2
+                                                  class="mrg-btm-20 card-title"
+                                                >
+                                                  Dirección IP privada
+                                                </h2>
+                                                <p>
+                                                  <ul>
+                                                    <li>Las direcciones IP privadas son como las direcciones dentro de tu casa. Se asignan a cada equipo conectado a una red privada, como tu red Wi-Fi en casa.</li>
+                                                    <li>Función: Permiten que los dispositivos se comuniquen entre sí dentro de una red local.</li>
+                                                    <li>Ejemplo: Cuando conectas tu celular, tableta o computadora a la red Wi-Fi de tu hogar, se le asigna una dirección IP privada.</li>
+                                                    <li>Clasificación:
+                                                      <ul></ul>
+                                                      <li>Clase A: Rango de 10.0.0.0 a 10.255.255.255. Usado para grandes redes, como empresas internacionales.</li>
+                                                      <li>Clase B: Rango de 172.16.0.0 a 172.31.255.255. Destinado a redes medianas, como empresas locales o escuelas.</li>
+                                                      <li>Clase C: Rango de 192.168.0.0 a 192.168.255.255. Corresponde a redes más pequeñas, como las redes domésticas.</li>
+                                                    </ul>
+                                                      </li>
+                                                  </ul>
 
-                  <p class="card-info mb-3">
-                    <i class="icon ti-mouse-alt"></i> Haz clic en siguiente una
-                    vez haya seleccionado la respuesta.
-                  </p>
-
-                  <main>
-                    <!-- creating a modal for when quiz ends -->
-                    <div class="modal-container" id="score-modal">
-                      <div class="modal-content-container">
-                        <h1>Felicidades, haz terminado el quiz.</h1>
-
-                        <div class="grade-details">
-                          <p>Intentos : 10</p>
-                          <p>
-                            Respuestas Incorrectas :
-                            <span id="wrong-answers"></span>
-                          </p>
-                          <p>
-                            Respuestas Correctas :
-                            <span id="right-answers"></span>
-                          </p>
-                          <p>
-                            Calificación : <span id="grade-percentage"></span>%
-                          </p>
-                          <p><span id="remarks"></span></p>
-                        </div>
-
-                        <div class="modal-button-container">
-                          <button onclick="closeScoreModal()">Continue</button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end of modal of quiz details-->
-
-                    <div class="game-quiz-container">
-                      <div class="game-details-container">
-                        <h1>Puntaje : <span id="player-score"></span> / 7</h1>
-                        <h1>
-                          Pregunta : <span id="question-number"></span> / 7
-                        </h1>
-                      </div>
-
-                      <div class="game-question-container">
-                        <h1 id="display-question"></h1>
-                      </div>
-
-                      <div class="game-options-container">
-                        <div class="modal-container" id="option-modal">
-                          <div class="modal-content-container">
-                            <h1>Selecciona una opción.</h1>
-
-                            <div class="modal-button-container">
-                              <button onclick="closeOptionModal()">
-                                Continuar
-                              </button>
+                                                </p>
+                                                
+                                                <p>
+                                                  En resumen, las direcciones IP son como los códigos postales de Internet. Sin ellas, los dispositivos no podrían comunicarse entre sí ni acceder a las páginas web. ¡Espero que esta explicación te ayude a entender mejor cómo funcionan las direcciones IP! 🌐🔍
+                                                </p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-
-                        <span>
-                          <input
-                            type="radio"
-                            id="option-one"
-                            name="option"
-                            class="radio"
-                            value="optionA"
-                          />
-                          <label
-                            for="option-one"
-                            class="option"
-                            id="option-one-label"
-                          ></label>
-                        </span>
-
-                        <span>
-                          <input
-                            type="radio"
-                            id="option-two"
-                            name="option"
-                            class="radio"
-                            value="optionB"
-                          />
-                          <label
-                            for="option-two"
-                            class="option"
-                            id="option-two-label"
-                          ></label>
-                        </span>
-
-                        <span>
-                          <input
-                            type="radio"
-                            id="option-three"
-                            name="option"
-                            class="radio"
-                            value="optionC"
-                          />
-                          <label
-                            for="option-three"
-                            class="option"
-                            id="option-three-label"
-                          ></label>
-                        </span>
-
-                        <span>
-                          <input
-                            type="radio"
-                            id="option-four"
-                            name="option"
-                            class="radio"
-                            value="optionD"
-                          />
-                          <label
-                            for="option-four"
-                            class="option"
-                            id="option-four-label"
-                          ></label>
-                        </span>
-                      </div>
-
-                      <div class="next-button-container">
-                        <button onclick="handleNextQuestion()">
-                          Siguiente
-                        </button>
                       </div>
                     </div>
-                  </main>
+                  </div>
                 </div>
               </div>
 
@@ -212,9 +226,9 @@
                         aria-valuenow="25"
                         aria-valuemin="0"
                         aria-valuemax="100"
-                        style="max-width: 100%"
+                        style="max-width: 71%"
                       >
-                        100%
+                        71%
                       </div>
                     </div>
                   </div>
@@ -246,6 +260,8 @@
       </div>
     </div>
 
+    <script src="./../navbarHtml.js"></script>
+
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
     <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
@@ -254,6 +270,7 @@
     <script src="../../assets/vendors/PACE/pace.min.js"></script>
     <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
+    <!-- Progress plugins -->
     <script src="../../assets/js/progressbar.js"></script>
     <script src="../../assets/js/progress-circle.js"></script>
 
@@ -265,10 +282,13 @@
     <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
 
+    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+    <script type="text/javascript">
+      show(9 / 27);
+    </script>
+
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <script src="../../assets/js/scripts/modulo2/cardQuiz.js"></script>
   </body>
 </html>
-
