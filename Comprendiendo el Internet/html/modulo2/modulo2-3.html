@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -31,9 +32,9 @@
 
         .flip-card {
             background-color: transparent;
-            width: calc(45%);
-            margin: 10px 5px; /* Modificado */
-            height: 170px;
+            width: calc(40%);
+            margin: 20px 45px; /* Modificado */
+            height: 190px;
             perspective: 1000px;
             flex: 0 0 auto;
             align-items: center; 
@@ -43,9 +44,9 @@
             position: relative;
             width: 100%;
             height: 100%;
-            margin: 10px 5px; 
+            margin: 20px 20px; 
             text-align: center;
-            transition: transform 0.6s;
+            transition: transform 0.7s;
             transform-style: preserve-3d;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         }
@@ -99,6 +100,8 @@
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
             font-weight: bold; /* Negrita */
+            padding: 10px; /* Agregado */
+            margin-top: 10px; /* Agregado */
         }
     </style>
 </head>
@@ -116,33 +119,21 @@
                 <div class="header navbar"></div>
                 <!-- Header END -->
 
+
                 <!-- Content Wrapper START -->
                 <div class="main-content">
                     <div class="container-fluid px-0 px-sm-3">
                         <!-- Your content goes here -->
                         <div class="row">
                             <div class="col">
-                                <div class="flechas">
-                                    <div class="flecha-izquierda">
-                                        <a href="../modulo1/modulo1-1.html" class="modulo-anterior">
-                                            <i class="ei ei-left-arrow mr-2"></i>
-                                            <span> Módulo Anterior</span>
-                                        </a>
-                                    </div>
-                                    <div class="flecha-derecha">
-                                        <a href="../modulo3/modulo3-1.html" class="modulo-siguiente">
-                                            <span> Módulo Siguiente</span>
-                                            <i class="ei ei-right-arrow ml-2"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                
                                 <div class="card">
                                     <div class="card-horizon">
                                         <h1 class="mrg-btm-20 card-title">
                                             <span class="badge badge-light tema-n">Tema 1: Hub, Router y Switch </span>
                                         </h1>
                                         <p>
-                                            Estos tres son como herramientas que permiten que las computadoras se conecten 
+                                            El Hub, Router y Switch son herramientas que permiten que las computadoras se conecten 
                                             a redes. Aunque cada uno de estos tres dispositivos tiene funciones diferentes, 
                                             a veces se combinan en un solo equipo. Pero incluso cuando esto sucede, cada 
                                             uno tiene una estructura y funciones que son únicas.
@@ -154,7 +145,11 @@
                                                         <div>Hub</div>
                                                     </div>
                                                     <div class="flip-card-back">
-                                                        <div>El hub es como el mensajero más sencillo de todos en una red de computadoras. Su trabajo es conectar todas las computadoras en una red local. A diferencia del switch y el router, el hub es mucho más simple. Solo recibe datos de una computadora y los envía a todas las demás. Usualmente, los hubs se usan para unir diferentes partes de una red LAN a través de sus puertos</div>
+                                                        <div>El hub es como el mensajero más sencillo de todos en una red de computadoras. 
+                                                            Su trabajo es conectar todas las computadoras en una red local. A diferencia del 
+                                                            switch y el router, el hub es mucho más simple. Solo recibe datos de una 
+                                                            computadora y los envía a todas las demás. Usualmente, los hubs se usan para unir 
+                                                            diferentes partes de una red LAN a través de sus puertos</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -165,7 +160,7 @@
                                                     </div>
                                                     <div class="flip-card-back">
                                                         <div>El router es como un cartero inteligente en la red de computadoras. Su trabajo es enviar paquetes de datos de una red a otra. Los routers pueden conectar muchas redes diferentes y suelen trabajar junto con hubs y switches. A menudo tienen herramientas adicionales, como un firewall, que es como un guardia de seguridad para tu red.
-                                                            El router conecta al menos dos redes, normalmente una red local (LAN) y una conexión a tu Proveedor de Servicios de Internet (ISP), que es como la entrada a la autopista del Internet.
+                                                            El router conecta al menos dos redes, normalmente una (LAN) y una (ISP).
                                                             </div>
                                                     </div>
                                                 </div>
@@ -176,14 +171,22 @@
                                                         <div>Switch</div>
                                                     </div>
                                                     <div class="flip-card-back">
-                                                        <div>El switch es como un mensajero especial en la red de computadoras, muy parecido al hub, pero entrega los mensajes de una forma diferente. Cuando un switch recibe información de una computadora, la envía directamente a la computadora que debe recibirla. Es como si el switch creara un camino privado para que el mensaje viaje desde la computadora que lo envía hasta la que lo recibe. De esta manera, la red no se “limita” a enviar información a una sola computadora a la vez, a diferencia del hub.</div>
+                                                        <div>El switch es como un mensajero especial en la red de computadoras, muy parecido al hub, pero entrega los mensajes de una forma diferente. Cuando un switch recibe información de una computadora, la envía directamente a la computadora que debe recibirla. 
+                                                            Es como si el switch creara un camino privado para que el mensaje viaje desde la computadora que lo envía hasta la que lo recibe.</div>
                                                     </div>
                                                 </div>
                                             </div>
                                             
-                                            
+                                                                        
                                         </div> <!-- Modificado -->
-                                        
+                                        <br><br>
+
+                                            <p>
+                                                Usualmente, en tu casa solo encontrarás el conocido módem, el cual cumple con las 
+                                                funciones de los equipos mencionados con anterioridad. 
+                                                <br>
+                                                En el siguiente módulo revisaremos más a detalle el tema de tipos de redes.
+                                            </p>
                                     </div>
                                 </div>
                             </div>
@@ -264,4 +267,3 @@
     <!-- Insert your dependencies here -->
 </body>
 </html>
-
