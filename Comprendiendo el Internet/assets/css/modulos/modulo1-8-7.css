@@ -34,26 +34,26 @@
 }
 
 .accordion .accordion-item:nth-child(1) {
-  background-color: #FEA82F;
+  background-color: #093B8B;
 
 }
 
 .accordion .accordion-item:nth-child(2) {
-  background-color: #7FBCD2;
+  background-color: #2E8FF0;
 }
 
 .accordion .accordion-item:nth-child(3) {
-  background-color: #B980F0;
+  background-color: #2EF0D4;
 }
 
 .accordion .accordion-item:nth-child(4) {
-  background-color: #7FB77E;
+  background-color: #2EF092;
 }
 
 .accordion .accordion-item:nth-child(5) {
-  background-color: #FF9999;
+  background-color: #1B9AAA;
 }
 
 .accordion .accordion-item:nth-child(6) {
-  background-color: #1B9AAA;
+  background-color: #2EF0D4;
 }
