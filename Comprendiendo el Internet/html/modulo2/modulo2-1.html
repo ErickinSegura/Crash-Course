@@ -23,6 +23,22 @@
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
 
     <style>
+
+
+
+        .content-container {
+            margin-top: 20px; /* Agrega un margen inferior para separar las tarjetas */
+            margin: 5px;
+            border-radius: 10px;
+            height: 580px; /* Cambia el valor de altura según tus necesidades */
+            overflow: hidden
+        }
+        
+
+        .paragraph-margin {
+            margin: 20px; /* Define el margen de 20 píxeles para todos los lados */
+        }
+
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -120,20 +136,19 @@
                 <!-- Content Wrapper START -->
                 <div class="main-content">
                     <div class="container-fluid px-0 px-sm-3">
+                        <div class="content-container">
                         <!-- Your content goes here -->
                         <div class="row">
                             <div class="col">
 
                                 <div class="card">
-                                    <div class="card-horizon">
-                                        <h1 class="mrg-btm-20 card-title">
-                                            <span class="badge badge-light tema-n">Tema 1: ¿Cómo navegar por Internet?</span>
+                                    <div class="card-horizon" class="paragraph-margin">
+                                        <h1 class="mrg-btm-20 card-title" class = "paragraph-margin">
+                                            <span class="badge badge-light tema-n" class = "paragraph-margin">Tema 1: ¿Cómo navegar por Internet?</span>
                                         </h1>
-                                        <p>
+                                        <p class = "paragraph-margin">
                                             En nuestra última charla, te conté un poco sobre qué es el Internet, la Web y cómo funcionan. Ahora, vamos a aprender más sobre las partes importantes que hacen que el Internet funcione. Vamos a hablar sobre:
-
-                                            Pon tu mouse sobre cada tarjeta para ver mas información.
-                                        </p>
+                                           </p>
                                         <div class="row"> <!-- Modificado -->
                                             <div class="flip-card">
                                                 <div class="flip-card-inner">
@@ -165,7 +180,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flip-card">
+                                            <div class="flip-card" style = "margin-left: 210px">
                                                 <div class="flip-card-inner">
                                                     <div class="flip-card-front direccion-ip">
                                                         <div>Dirección IP</div>
@@ -186,7 +201,7 @@
                                                 </div>
                                             </div>
                                         </div> <!-- Modificado -->
-                                        
+                                    </div>
                                     </div>
                                 </div>
                             </div>
