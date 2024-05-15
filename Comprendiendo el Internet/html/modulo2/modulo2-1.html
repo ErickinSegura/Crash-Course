@@ -24,8 +24,6 @@
 
     <style>
 
-
-
         .content-container {
             margin-top: 20px; /* Agrega un margen inferior para separar las tarjetas */
             margin: 5px;
@@ -85,28 +83,39 @@
         }
 
         .flip-card-front {
-            background-color: #bbb;
-            color: black;
-        }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #bbb;
+    color: #394a61; /* Un color que contrarreste el azul, como naranja */
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Asegura que la tarjeta ocupe todo el espacio disponible */
+    padding: 15px; /* Añade espacio para que el texto no esté pegado al borde */
+}
+
+
+
 
         .flip-card-front.proveedor {
-            background-image: url('../../assets/images/course/modulo2/8ffb21cf-bd3f-4b82-9688-fb1692ca60c6.jpeg');
+            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_1.png');
         }
 
         .flip-card-front.hub-router {
-            background-image: url('../../assets/images/course/modulo2/41ac291d-1b40-49a1-943f-80a1526a1cfe.jpeg');
+            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_2.png');
         }
 
         .flip-card-front.navegadorweb {
-            background-image: url('../../assets/images/course/modulo2/6b477be5-c2ba-43dc-955f-f44ff2ad7194.jpeg');
+            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_3.png');
         }
 
         .flip-card-front.direccion-ip {
-            background-image: url('../../assets/images/course/modulo2/88c734f8-2777-41e3-8f52-071704b9c721.jpeg');
+            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_4.png');
         }
 
         .flip-card-front.DNS {
-            background-image: url('../../assets/images/course/modulo2/798acb8b-acf4-42ca-8062-5a8101aa85bb.jpeg');
+            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_5.png');
         }
 
         .flip-card-back {
