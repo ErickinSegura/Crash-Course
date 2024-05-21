@@ -1,0 +1,21 @@
+.d-block {
+    max-height: 600px;
+    width: auto !important;
+  }
+  
+  .carousel-inner .carousel-item {
+    height: 100%;
+  }
+  
+  .carousel-indicators .active {
+    background-color: var(--theme-color) !important;
+  }
+  .carousel-indicators {
+    bottom: 0;
+    margin-bottom: -20px;
+  }
+  .carousel-indicators li {
+    height: 10px;
+    background-color: gray !important;
+  }
+  

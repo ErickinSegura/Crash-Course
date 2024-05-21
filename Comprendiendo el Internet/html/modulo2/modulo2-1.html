@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no" />
-    <title>Módulo 2: ¿Cómo usar el Internet? | CVA - Centro Virtual de Aprendizaje</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <title>
+      Tema 1: Consideraciones para utilizar el control biológico | CVA - Centro
+      Virtual de Aprendizaje
+    </title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
 
     <!-- plugins css -->
-    <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
-    <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"
+    />
+
+    <!-- page plugins css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/css/modulos/modulo1/panelAnimado.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/css/modulos/modulo1/panelCarrusel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/css/modulos/modulo1/panelVertical.css"
+    />
+    <link
+      href="../../assets/css/modulos/modulo1/custom-slide.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/css/modulos/modulo1/carrousel-slides.css"
+    />
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -22,19 +59,36 @@
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
 
+    <!-- page plugins css 
+    CSS necesario para el carrusel-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Puedes editar los componentes del carrusel, para ello puedes checar
+    el siguiente link: https://kenwheeler.github.io/slick/ -->
     <style>
+      .slick-dots li.slick-active button::before {
+        color: #23806f !important;
+      }
 
-        .content-container {
-            margin-top: 20px; /* Agrega un margen inferior para separar las tarjetas */
-            margin: 5px;
-            border-radius: 10px;
-            height: 580px; /* Cambia el valor de altura según tus necesidades */
-            overflow: hidden
-        }
-        
+      .slick-dots li button::before {
+        color: black !important;
+      }
 
-        .paragraph-margin {
-            margin: 20px; /* Define el margen de 20 píxeles para todos los lados */
+      .slick-prev::before,
+      .slick-next::before {
+        color: #23806f !important;
+      }
+      .paragraph-margin {
+            margin: 50px; /* Define el margen de 20 píxeles para todos los lados */
         }
 
         .row {
@@ -44,222 +98,292 @@
             margin: 0 -5px;
         }
 
-        .flip-card {
-            background-color: transparent;
-            width: calc(25% - 10px);
-            margin: 10px 50px; /* Modificado */
-            height: 150px;
-            perspective: 1000px;
-            flex: 0 0 auto;
-        }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            margin: 20px 20px;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        }
-
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front, .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            padding: 10px;
-            background-size: cover;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            display: flex;
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-            font-weight: bold; /* Negrita */
-        }
-
-        .flip-card-front {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    background-color: #bbb;
-    color: #394a61; /* Un color que contrarreste el azul, como naranja */
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    height: 100%; /* Asegura que la tarjeta ocupe todo el espacio disponible */
-    padding: 15px; /* Añade espacio para que el texto no esté pegado al borde */
-}
-
-
-
-
-        .flip-card-front.proveedor {
-            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_1.png');
-        }
-
-        .flip-card-front.hub-router {
-            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_2.png');
-        }
-
-        .flip-card-front.navegadorweb {
-            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_3.png');
-        }
-
-        .flip-card-front.direccion-ip {
-            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_4.png');
-        }
-
-        .flip-card-front.DNS {
-            background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_5.png');
-        }
-
-        .flip-card-back {
-            background-color: #2980b9;
-            color: white;
-            transform: rotateY(180deg);
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-            font-weight: bold; /* Negrita */
-        }
     </style>
-</head>
+  </head>
 
-<body class="header-info side-nav-dark">
+  <body class="header-info side-nav-dark">
     <div class="app">
-        <div class="layout">
-            <!-- Side Nav START -->
-            <div class="side-nav" id="sideNav"></div>
-            <!-- Side Nav END -->
+      <div class="layout">
+        <!-- Side Nav START -->
+        <div class="side-nav" id="sideNav"></div>
+        <!-- Side Nav END -->
 
-            <!-- Page Container START -->
-            <div class="page-container">
-                <!-- Header START -->
-                <div class="header navbar"></div>
-                <!-- Header END -->
+        <!-- Page Container START -->
+        <div class="page-container">
+            <!-- Header START -->
+            <div class="header navbar"></div>
+            <!-- Header END -->
 
-                <!-- Content Wrapper START -->
-                <div class="main-content">
-                    <div class="container-fluid px-0 px-sm-3">
-                        <div class="content-container">
-                        <!-- Your content goes here -->
-                        <div class="row">
-                            <div class="col">
+            <!-- Content Wrapper START -->
+            <div class="main-content">
+                <div class="container-fluid px-0 px-sm-3">
+                    <div class="content-container">
+                    <!-- Your content goes here -->
+                    <div class="row">
+                        <div class="col">
 
-                                <div class="card">
-                                    <div class="card-horizon" class="paragraph-margin">
-                                        <h1 class="mrg-btm-20 card-title" class = "paragraph-margin">
-                                            <span class="badge badge-light tema-n" class = "paragraph-margin">Tema 1: ¿Cómo navegar por Internet?</span>
-                                        </h1>
-                                        <p class = "paragraph-margin">
-                                            En nuestra última charla, te conté un poco sobre qué es el Internet, la Web y cómo funcionan. Ahora, vamos a aprender más sobre las partes importantes que hacen que el Internet funcione. Vamos a hablar sobre:
-                                           </p>
-                                        <div class="row"> <!-- Modificado -->
-                                            <div class="flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front proveedor">
-                                                        <div>Proveedor de Servicios de Internet</div>
-                                                    </div>
-                                                    <div class="flip-card-back">
-                                                        <div>Es como una empresa que te conecta al Internet, un poco como cuando compras un boleto para un viaje en autobús.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front hub-router">
-                                                        <div>Diferencias entre Hub, Router y Switch</div>
-                                                    </div>
-                                                    <div class="flip-card-back">
-                                                        <div>Estos son como estaciones de autobús que ayudan a enviar la información a donde necesita ir en el Internet.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front navegadorweb">
-                                                        <div>Navegador Web</div>
-                                                    </div>
-                                                    <div class="flip-card-back">
-                                                        <div>Es como un mapa que te ayuda a encontrar y ver diferentes lugares en el Internet, como Google Chrome o Firefox.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="flip-card" style = "margin-left: 210px">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front direccion-ip">
-                                                        <div>Dirección IP</div>
-                                                    </div>
-                                                    <div class="flip-card-back">
-                                                        <div>Es como la dirección de tu casa, pero para tu computadora en el Internet.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="flip-card">
-                                                <div class="flip-card-inner">
-                                                    <div class="flip-card-front DNS">
-                                                        <div>DNS</div>
-                                                    </div>
-                                                    <div class="flip-card-back">
-                                                        <div>Es como una agenda que ayuda a tu computadora a encontrar las direcciones IP de los sitios web que quieres visitar.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> <!-- Modificado -->
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Botones de avance entre páginas-->
-                        <div class="row mrg-btm-20">
-                            <div class="col text-center">
-                                <div class="btn-group"></div>
-                            </div>
-                        </div>
-
-                        <!--Widgets de avance de módulo y general-->
-                        <div class="card widget-feed">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
-                                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                                    <div class="progress" style="height: 20px" id="bar">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 71%">71%</div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div id="circlecontainer"></div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col text-center">
-                                            <h3 class="feed-subtitle">Progreso General del Curso</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Content Wrapper END -->
-
-                <!-- Footer START -->
-                <footer class="content-footer"></footer>
-                <!-- Footer END -->
+                            <div class="card">
+                                <div class="card-horizon" class="paragraph-margin">
+                                    <h1 class="mrg-btm-20 card-title" class = "paragraph-margin">
+                                        <span class="badge badge-light tema-n" class = "paragraph-margin">Tema 1: ¿Cómo navegar por Internet?</span>
+                                    </h1>
+                                
+                                    
             </div>
-            <!-- Page Container END -->
-        </div>
-    </div>
+            
 
-    <script src="./../navbarHtml.js"></script>
+                <div class="row">
+                  <div class="col">
+                    <div class="card card-block">
+                      <p>
+                        En nuestra última charla, te conté un poco sobre qué es el Internet, la Web y cómo funcionan. Ahora, vamos a aprender más sobre las partes importantes que hacen que el Internet funcione. Vamos a hablar sobre:                      </p>
+
+                      <p class="card-info" style="width: fit-content">
+                        <i class="icon ti-mouse-alt"></i>
+                        Haz clic de lado derecho de la imagen para visualizar el
+                        contenido completo
+                      </p>
+
+                      <div class="cs-container">
+                        <div
+                          class="cs-next-tip ei ei-right-chevron-circle"
+                        ></div>
+
+                        <div class="cs-previous"></div>
+                        <div class="cs-next"></div>
+
+                        <div class="cs-next-arrow ei ei-right-arrow-2"></div>
+                        <div class="cs-previous-arrow ei ei-left-arrow-2"></div>
+
+                        <!-- SLIDE 1 BEGIN -->
+                        <div class="custom-slide mt-2 mt-md-4">
+                          <div class="row">
+                            <div
+                              class="col-md-4 order-1 order-md-0"
+                              style="
+                                background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_1.png');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                                min-height: 180px;
+                              "
+                            ></div>
+                            <div class="col-md-8 py-3">
+                              <h3 class="card-title">
+                                Proveedor de Servicios de Internet
+                              </h3>
+                              <p>
+                                Es como una empresa que te conecta al Internet, un poco como cuando compras un boleto para un viaje en autobús.
+                            </p>                              
+                            </div>
+                          </div>
+                        </div>
+                        <!-- SLIDE 1 END -->
+
+                        <!-- SLIDE 2 BEGIN -->
+                        <div class="custom-slide mt-2 mt-md-4">
+                          <div class="row">
+                            <div
+                              class="col-md-4 order-1 order-md-0"
+                              style="
+                                background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_2.png');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                                min-height: 240px;
+                              "
+                            ></div>
+                            <div class="col-md-8 py-3">
+                              <h3 class="card-title">
+                                Diferencias entre Hub, Router y Switch
+                              </h3>
+                              <p>
+                                Estos son como estaciones de autobús que ayudan a enviar la información a donde necesita ir en el Internet.
+                              </p>
+                              <ul class="list-hover lh-center pb-3">
+                                <li><b>Hub: </b> mensajes a todos los edificios sin saber a quién van.</li>
+                                <li><b>Switch: </b> mensajes directamente al edificio correcto usando direcciones especiales. </li>
+                                <li><b>Router: </b> diferentes ciudades y decide cómo viajan los mensajes</li>
+                              </ul>
+
+                            </div>
+                          </div>
+                        </div>
+                        <!-- SLIDE 2 END -->
+
+                        <!-- SLIDE 3 BEGIN -->
+                        <div class="custom-slide mt-2 mt-md-4">
+                          <div class="row">
+                            <div
+                              class="col-md-4 order-1 order-md-0"
+                              style="
+                                background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_3.png');
+                                background-repeat: no-repeat;
+                                background-position-y: 35%;
+                                background-size: 120%;
+                                min-height: 200px;
+                              "
+                            ></div>
+                            <div class="col-md-8 py-3">
+                              <h3 class="card-title">
+                                Navegador Web
+                              </h3>
+                              <p>
+                                Es como un mapa que te ayuda a encontrar y ver diferentes lugares en el Internet, como Google Chrome o Firefox.
+                              </p>
+                              <ul class="list-hover lh-center pb-3">
+                                <p>Con ellos puedes: </p>
+                                <li>Buscar información y Visitar sitios web</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- SLIDE 3 END -->
+
+                        <!-- SLIDE 4 BEGIN -->
+                        <div class="custom-slide mt-2 mt-md-4">
+                          <div class="row">
+                            <div
+                              class="col-md-4 order-1 order-md-0"
+                              style="
+                                background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_4.png');
+                                background-repeat: no-repeat;
+                                background-position-y: 35%;
+                                background-size: cover;
+                                min-height: 240px;
+                              "
+                            ></div>
+                            <div class="col-md-8 py-3">
+                              <h3 class="card-title">
+                                Dirección IP
+                              </h3>
+                              <p>
+                                Es como la dirección de tu casa, pero para tu computadora en el Internet.
+                              </p>
+                              <p>Cuando visitas un sitio web, tu navegador (como Google Chrome o Firefox) le pide al servidor del sitio que envíe la página. El servidor responde enviando los datos a tu dirección IP. Así es como ves el contenido en tu dispositivo. 🌐📥
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- SLIDE 5 BEGIN -->
+                        <div class="custom-slide mt-2 mt-md-4">
+                            <div class="row">
+                              <div
+                                class="col-md-4 order-1 order-md-0"
+                                style="
+                                  background-image: url('../../assets/images/course/modulo2/imagenes-modulo/Tema2_1_5.png');
+                                  background-repeat: no-repeat;
+                                  background-position-y: 35%;
+                                  background-size: cover;
+                                  min-height: 240px;
+                                "
+                              ></div>
+                              <div class="col-md-8 py-3">
+                                <h3 class="card-title">
+                                    DNS
+                                </h3>
+                                <p>
+                                    Es como una agenda que ayuda a tu computadora a encontrar las direcciones IP de los sitios web que quieres visitar.
+                                </p>
+                                <p>Cuando introduces un nombre de dominio en tu navegador, comienza un proceso llamado “resolución DNS”. </p>
+                              </div>
+                            </div>
+                          </div>
+  
+                          
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!--Botones de avance entre páginas-->
+              <div class="row mrg-btm-20">
+                <div class="col text-center">
+                  <div class="btn-group"></div>
+                </div>
+              </div>
+
+              <!--Widgets de avance de módulo y general-->
+              <div class="card widget-feed">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h1 class="feed-title tag tag-info">Módulo 1</h1>
+                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                    <div class="progress" style="height: 20px" id="bar">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="max-width: 71%"
+                      >
+                        71%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="row">
+                      <div class="col">
+                        <div id="circlecontainer"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center">
+                        <h3 class="feed-subtitle">
+                          Progreso General del Curso
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Wrapper END -->
+
+          <!-- Footer START -->
+          <footer class="content-footer">
+            <div class="footer">
+              <div class="row">
+                <div class="col-12 col-md-8">
+                  <p>
+                    Se prohíbe la reproducción total o parcial sin previo y
+                    expreso consentimiento por escrito.
+                  </p>
+                  <p>
+                    D.R.© Instituto Tecnológico y de Estudios Superiores de
+                    Monterrey, México, 2020.
+                  </p>
+                </div>
+                <div class="col-12 col-md-4 center align-self-center">
+                  <a
+                    href="http://www.cca.org.mx/DED_Avisos/CCA_Aviso_Legal.pdf"
+                    target="_blank"
+                    >Aviso Legal</a
+                  >
+                  <span><b>|</b></span>
+                  <a
+                    href="https://tec.mx/es/avisos-de-privacidad"
+                    target="_blank"
+                    >Aviso de Privacidad</a
+                  >
+                  <span><b>|</b></span>
+                  <a href="../creditos/creditos.html">Créditos</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Footer END -->
+        </div>
+        <!-- Page Container END -->
+      </div>
+    </div>
 
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
@@ -281,13 +405,81 @@
     <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
 
-    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
-    <script type="text/javascript">
-        show(5 / 27);
-    </script>
-
     <!-- endbuild -->
 
-    <!-- Insert your dependencies here -->
-</body>
+    <!-- Insert your dependencies here 
+    Dependencias de JS necesarias para el carrusel -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="../../assets/js/scripts/modulo1/custom-slide.js"></script>
+
+    <!-- Código necesario para el carrusel, checar la documentación en: 
+    https://kenwheeler.github.io/slick/ para más información -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider").slick({
+          infinite: false,
+          dots: true,
+          arrows: true,
+        });
+      });
+    </script>
+
+    <!-- Código para el tooltip (hover)-->
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+    <!-- Código del segundo carrusel -->
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      var cont = 1;
+      function showModal() {
+        $("#Q1").modal({ show: true });
+      }
+      function adelante() {
+        cont += 1;
+        if (cont >= 6) {
+          cont = 6;
+        }
+        slide(cont);
+      }
+      function atras() {
+        cont -= 1;
+        if (cont <= 0) {
+          cont = 1;
+        }
+        slide(cont);
+      }
+      function slide(i) {
+        switch (i) {
+          case 1:
+            $('[href="#S-1"]').tab("show");
+            break;
+          case 2:
+            $('[href="#S-2"]').tab("show");
+            break;
+          case 3:
+            $('[href="#S-3"]').tab("show");
+            break;
+          case 4:
+            $('[href="#S-4"]').tab("show");
+            break;
+          case 5:
+            $('[href="#S-5"]').tab("show");
+            break;
+          case 6:
+            $('[href="#S-6"]').tab("show");
+            break;
+        }
+      }
+    </script>
+  </body>
 </html>

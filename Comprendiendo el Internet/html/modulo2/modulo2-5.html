@@ -108,14 +108,20 @@
                             data-html="true"
                             data-content="Dirección asignada temporalmente a un dispositivo dentro de una red informática."
                             ><b>IPs dinámicas</b>
-                          </a>  e <a
-                          data-toggle="tooltip"
-                          title="Dirección asignada de forma permanente a un dispositivo dentro de una red informática"
-                          href="javascript:void(0);"
-                          data-original-title="IPs estática"
+                          </a>  e                            <a
+                          href="javascript:void(0)"
+                          title="Ips dinámicas"
+                          data-toggle="popover"
+                          data-trigger="hover"
+                          data-placement="auto"
+                          data-html="true"
+                          data-content="Dirección asignada de forma permanente a un dispositivo dentro de una red informática"
+          
                           ><b>IPs estáticas</b>
                         </a>. 
                             </p>
+
+                            
                           </p>
                           <p>
                             Por lo general, cuando te conectas a Internet desde un dispositivo electrónico 
@@ -210,6 +216,13 @@
     <script type="text/javascript">
       show(9 / 27);
     </script>
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
+
 
     <!-- endbuild -->
 
