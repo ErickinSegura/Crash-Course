@@ -37,6 +37,8 @@
     <link href="../../assets/css/app.css" rel="stylesheet" />
     <link href="../../assets/css/progress.css" rel="stylesheet" />
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
+    <link href="../../assets/css/modulos/modulo1/m1-4-3.css" rel="stylesheet" />
+
 
     <!-- Esta es la parte que da diseño a monito con botones -->
     <link href="../../assets/css/modulos/modulo1/cuerpo.css" rel="stylesheet" />
@@ -89,13 +91,16 @@
                             <!-- Eliminar instrucción cuando ya no sea necesaria -->
                             <div class="alert alert-warning w-100" role="alert" class = "paragraph-margin">
                               <b
-                                  >El <a
-                                  data-toggle="tooltip"
-                                  title="Proveedor de Servicios de Internet"
-                                  href="javascript:void(0);"
-                                  data-original-title="Proveedor de Servicios de Internet"
-                                  >ISP
-                                </a>,  es como una empresa que te vende un boleto para viajar por el Internet.<br />
+                                  >El                             <a
+                                  href="javascript:void(0)"
+                                  title="ISP"
+                                  data-toggle="popover"
+                                  data-trigger="hover"
+                                  data-placement="auto"
+                                  data-html="true"
+                                  data-content="Provedor de servicios de internet."
+                                  ><b>ISP</b>
+                                </a>  ,  es como una empresa que te vende un boleto para viajar por el Internet.<br />
                                 </b>
                               </div>
                               
@@ -323,5 +328,12 @@
         }
       }
     </script>
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
+
   </body>
 </html>
