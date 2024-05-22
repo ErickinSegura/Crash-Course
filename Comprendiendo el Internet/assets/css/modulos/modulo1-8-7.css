@@ -1,15 +1,14 @@
 /* The Magic */
 .accordion:hover .accordion-item:hover .accordion-item-content,
 .accordion .accordion-item--default .accordion-item-content {
-    height: 6rem;
+    max-height: 1000px; /* A large value to allow full expansion */
 }
-
 
 .accordion-item-content,
 .accordion:hover .accordion-item-content {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height .25s;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .accordion h1, .accordion p {
@@ -19,8 +18,7 @@
 .accordion {
     padding: 0;
     margin: 0 auto;
-    width: 80%;
-    
+    width: 90%;
 }
 
 .accordion .accordion-item {
@@ -35,7 +33,7 @@
 
 .accordion .accordion-item:nth-child(1) {
   background-color: #093B8B;
-
+  max-height: max-content
 }
 
 .accordion .accordion-item:nth-child(2) {

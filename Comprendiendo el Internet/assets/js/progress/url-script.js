@@ -263,11 +263,12 @@ function getFiles() {
       3: 'modulo5-3.html',
       4: 'modulo5-4.html',
       5: 'modulo5-5.html',
-      6: 'modulo5-6.html',
-      7: 'modulo5-7.html',
-      8: 'modulo5-8.html',
-      9: 'modulo5-9.html',
-      10: 'modulo5-10.html',
+      6: 'modulo5-5video.html',
+      7: 'modulo5-6.html',
+      8: 'modulo5-7.html',
+      9: 'modulo5-8.html',
+      10: 'modulo5-9.html',
+      11: 'modulo5-10.html',
     },
   };
 
