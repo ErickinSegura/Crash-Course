@@ -6,12 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>
-      Módulo 2: ¿Cómo usar el Internet? | CVA - Centro Virtual de Aprendizaje
-    </title>
+    <title>Preposiciones | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/logo/favicon.png"
+    />
 
     <!-- plugins css -->
     <link
@@ -28,16 +29,37 @@
     />
 
     <!-- page plugins css -->
-
+    <link rel="stylesheet" href="../../assets/css/curso/imgFlexContainer.css">
+    <link rel="stylesheet" href="../../assets/css/curso/styles.css">
     <!-- core css -->
-    <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
-    <link href="../../assets/css/themify-icons.css" rel="stylesheet" />
-    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="../../assets/css/animate.min.css" rel="stylesheet" />    
-    <link href="../../assets/css/app.css" rel="stylesheet" />
-    <link href="../../assets/css/progress.css" rel="stylesheet" />
-    <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
-    <link href="../../assets/css/modulos/modulo1/m1-4-3.css" rel="stylesheet" />  
+    <link
+      href="../../assets/css/ei-icon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/css/themify-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/css/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/css/app.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/css/progress.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../assets/css/progress-circle.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="header-info side-nav-dark">
@@ -97,28 +119,44 @@
                             </ul>
                           </p>
                           <p>
-                            Y pueden usarse de dos maneras: como 
+                            Y pueden usarse de dos maneras:  
 
-                            <a
-                            href="javascript:void(0)"
-                            title="Ips dinámicas"
-                            data-toggle="popover"
-                            data-trigger="hover"
-                            data-placement="auto"
-                            data-html="true"
-                            data-content="Dirección asignada temporalmente a un dispositivo dentro de una red informática."
-                            ><b>IPs dinámicas</b>
-                          </a>  e                            <a
-                          href="javascript:void(0)"
-                          title="Ips dinámicas"
-                          data-toggle="popover"
-                          data-trigger="hover"
-                          data-placement="auto"
-                          data-html="true"
-                          data-content="Dirección asignada de forma permanente a un dispositivo dentro de una red informática"
-          
-                          ><b>IPs estáticas</b>
-                        </a>. 
+                          <div class="tp-wrapper" tabindex="0">
+                            <span class="tp-label-text"><b>IPs dinámicas</b></span>
+                            <div class="app-tp" id="tp-container" role="tooltip">
+                              <div class="app-tp-inner-wrapper">
+                                <div class="app-tp-header">
+                                  <span class="app-tp-prono">Definición</span>
+                                </div>
+                                <div class="app-tp-text">
+                                  <p>
+                                    Dirección asignada temporalmente a un dispositivo dentro de una red informática
+                                  </p>
+                                </div>
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <p> e </p>
+                                <a>             
+                        <div class="tp-wrapper" tabindex="0">
+                          <span class="tp-label-text"><b>IPs estáticas</b></span>
+                          <div class="app-tp" id="tp-container" role="tooltip">
+                            <div class="app-tp-inner-wrapper">
+                              <div class="app-tp-header">
+                                <span class="app-tp-prono">Definición</span>
+                              </div>
+                              <div class="app-tp-text">
+                                <p>
+                                  Dirección asignada de forma permanente a un dispositivo dentro de una red informática.
+                                </p>
+                              </div>
+                            </a>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
                             </p>
 
                             
@@ -128,10 +166,15 @@
                             se te asigna una IP dinámica.
                           </p>
 
+                          
                       </div>
+
                     </div>
+                    
                   </div>
+                  
                 </div>
+                
 
               </div>
 
@@ -218,6 +261,28 @@
     </script>
 
 <script>
+  function initTooltip(tooltipContainer       ) {
+    const trigger = tooltipContainer.classList.contains('tp-wrapper') ? tooltipContainer : tooltipContainer.querySelector('.tp-wrapper');
+    const tooltip = tooltipContainer.querySelector('.app-tp');
+
+    // hide the tooltip on escape key press
+    trigger.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        trigger.blur();
+      }
+    });
+  
+
+  }
+  // initiate tooltips
+  const tooltips = document.querySelectorAll('.tp-wrapper');
+  tooltips.forEach((tooltip) => {
+    initTooltip(tooltip);
+  });
+</script>
+
+
+<script>
   $(document).ready(function () {
     $('[data-toggle="popover"]').popover();
   });
@@ -229,3 +294,7 @@
     <!-- Insert your dependencies here -->
   </body>
 </html>
+
+
+
+
