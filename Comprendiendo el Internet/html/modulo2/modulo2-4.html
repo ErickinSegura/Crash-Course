@@ -27,30 +27,28 @@
 
     <style>
       #browser-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
 
-.browser-item {
-    text-align: center;
-}
+      .browser-item {
+        text-align: center;
+      }
 
-.browser-logo {
-    width: 50px;
-    height: auto;
-    margin-top: 10px;
-}
+      .browser-logo {
+        width: 50px;
+        height: auto;
+        margin-top: 10px;
+      }
 
-.background-holder {
-    background-size: contain; /* Ajusta la imagen al contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen en el contenedor */
-    width: 50%; /* Ajusta el ancho al 100% del contenedor */
-    height: 100px; /* Ajusta la altura según sea necesario */
-}
-
-
+      .background-holder {
+        background-size: contain; /* Ajusta la imagen al contenedor */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen en el contenedor */
+        width: 50%; /* Ajusta el ancho al 100% del contenedor */
+        height: 100px; /* Ajusta la altura según sea necesario */
+      }
     </style>
 </head>
 
@@ -135,38 +133,8 @@
                                                                 </ul>
                                                             </div>
                                                         </div>
-
+                                                    
                                                         <!--Botones de avance entre páginas-->
-                                                        <div class="row mrg-btm-20">
-                                                            <div class="col text-center">
-                                                                <div class="btn-group"></div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!--Widgets de avance de módulo y general-->
-                                                        <div class="card widget-feed">
-                                                            <div class="row">
-                                                                <div class="col-lg-8">
-                                                                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
-                                                                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                                                                    <div class="progress" style="height: 20px" id="bar">
-                                                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 71%">71%</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4">
-                                                                    <div class="row">
-                                                                        <div class="col">
-                                                                            <div id="circlecontainer"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col text-center">
-                                                                            <h3 class="feed-subtitle">Progreso General del Curso</h3>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -175,6 +143,39 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row mrg-btm-20">
+                            <div class="col text-center">
+                                <div class="btn-group"></div>
+                            </div>
+                        </div>
+
+
+                        <!--Widgets de avance de módulo y general-->
+                        <div class="card widget-feed">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h1 class="feed-title tag tag-info">Módulo 2</h1>
+                                    <h3 class="feed-subtitle">Tu Progreso</h3>
+                                    <div class="progress" style="height: 20px" id="bar">
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 71%">71%</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div id="circlecontainer"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <h3 class="feed-subtitle">Progreso General del Curso</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <!-- Content Wrapper END -->

@@ -66,7 +66,7 @@ h4 small,
 h5 small,
 h6 small {
   font-weight: 300;
-  color: #5c5f73;
+  color: #fff;
 }
 
 .text-hyperlink {
@@ -154,7 +154,7 @@ li {
 }
 
 .slide-container {
-  border: 3px solid #313644;
+  border: 3px solid #fff;
   border-radius: 20px;
   padding: 20px;
   width: 70%;
