@@ -49,6 +49,20 @@
             margin: 20px; 
         }
 
+        .alert {
+            display: inline-block; /* Ajusta el ancho al contenido */
+            max-width: 100%; /* Evita que se extienda más allá del contenedor padre */
+            overflow: hidden; /* Recorta el contenido desbordante */
+        }
+        .row.no-divider > [class*='col-'] {
+            border: 0; /* Elimina los bordes */
+        }
+
+        .row.no-divider {
+            background-color: white; /* Asegura que el fondo sea blanco */
+        }
+
+
     </style>
   </head>
 
@@ -81,7 +95,7 @@
                           "
                         ></div>
                       </div>
-                      <div class="row">
+                      <div class="row no-divider">
                         <div class="col-md-8 ml-auto" class = "paragraph-margin">
                           <div class="card-block" >
                             <h1 class="mrg-btm-20 card-title">
@@ -89,21 +103,13 @@
                               Proveedor de Servicios de Internet (ISP)
                             </h1>
                             <!-- Eliminar instrucción cuando ya no sea necesaria -->
-                            <div class="alert alert-warning w-100" role="alert" class = "paragraph-margin">
-                              <b
-                                  >El                             <a
-                                  href="javascript:void(0)"
-                                  title="ISP"
-                                  data-toggle="popover"
-                                  data-trigger="hover"
-                                  data-placement="auto"
-                                  data-html="true"
-                                  data-content="Provedor de servicios de internet."
-                                  ><b>ISP</b>
-                                </a>  ,  es como una empresa que te vende un boleto para viajar por el Internet.<br />
-                                </b>
-                              </div>
-                              
+<div class="alert alert-warning paragraph-margin" role="alert">
+        <b>
+            El <a href="javascript:void(0)" title="ISP" data-toggle="popover" data-trigger="hover" data-placement="auto" data-html="true" data-content="Provedor de servicios de internet.">
+                <b>ISP</b>
+            </a>, es como una empresa que te vende un boleto para viajar por el Internet.<br />
+        </b>
+    </div>                              
                             <p class = "paragraph-margin">
                               El ISP es la empresa que vende a los usuarios la conexión a Internet. Imagínalo como 
                               si el Internet fuera un gran parque de diversiones y el ISP es la taquilla donde 
@@ -119,7 +125,7 @@
 
                             </p>
                           </div>
-                          <div class="row">
+                          <div class="row no-divider">
                             <div class="col-lg-12 text-center">
                               <button
                                 data-toggle="modal"
@@ -138,11 +144,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row">
+              <div class="row no-divider">
                 <div class="col">
-                  <div class="card card-block">
                     <h2 class="card-title">
                     </h2>
 
