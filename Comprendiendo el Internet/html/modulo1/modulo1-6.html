@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <title>Conclusión | CVA - Centro Virtual de Aprendizaje</title>
+    <title>Ejercicio | CVA - Centro Virtual de Aprendizaje</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.png" />
@@ -37,6 +37,7 @@
     <link href="../../assets/css/progress-circle.css" rel="stylesheet" />
   </head>
 
+
   <body class="header-info side-nav-dark">
     <div class="app">
       <div class="layout">
@@ -58,53 +59,23 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-horizon">
-                      <div class="image-container col-md-4">
+                      <div class="image-container col-md-5">
                         <div
                           class="background-holder has-content"
                           style="
-                            background-image: url('./../../assets/images/course/modulo1/conclusion.png');
+                            background-image: url('../../assets/images/course/modulo1/Ejercicio.png');
                           "
                         ></div>
                       </div>
                       <div class="container-fluid">
                         <div class="row">
-                          <div class="col-md-8 ml-auto">
-                            <div class="pdd-vertical-30 pdd-horizon-25">
-                              <h1 class="mrg-btm-20 card-title">
-                                <span class="badge badge-light tema-n"
-                                  >Conclusión del Módulo 1</span
-                                >
-                              </h1>
-                              <p>En este primer módulo aprendiste grandes cosas sobre el internet.
-                                 Internet es una herramienta poderosa que te permite aprender, crecer, 
-                                 entretenerte y conectarte con el mundo.
-                                 Puedes recordar los sitios web como libros en esta biblioteca, y 
-                                 un navegador web es tu herramienta para explorarlos. 
-                                 Todo esto sucede al conectar tu dispositivo a la red, ya sea por
-                                 cable o inalámbricamente. 
-                              </p>
-
-                              <p>En concreto, los temas fueron los siguientes:</p>
-                              <ul style="font-weight: bold">
-                                <li>Qué es la Web. Su definición y lo que puedes hacer en ella.</li>
-                                <li>
-                                  Cuál es la definición general del Internet y sus componentes.
-                                </li>
-                                <li>Qué pasa cuando uno visita un sitio web</li>
-                                <li>Qué es un servidor y para qué sirve.</li>
-                                <li>Qué es un navegador web y un buscador.</li>
-                              </ul>
-                              <br />
+                          <div class="col-md-7 ml-auto">
+                            <div class="pdd-vertical-35 pdd-horizon-25">
+                              <h1 class="mrg-btm-20 card-title">Ejercicio</h1>
                               <p>
-                                Todos estos conceptos te permitieron
-                                tener un conocimiento más amplio de lo que es:
+                                Lee con atención cada enunciado y selecciona la
+                                opción correcta.
                               </p>
-                              <ul style="font-weight: bold">
-                                <li>El Internet</li>
-                                <li>La World Wide Web</li>
-                              </ul>
-                              <br />
-                              
                             </div>
                           </div>
                         </div>
@@ -113,68 +84,112 @@
                   </div>
                 </div>
               </div>
-
-              <div class="row">
-                <div class="col">
-                  <div class="card">
-                    <div class="card-block">
-                      <h2 class="card-title">Referencias</h2>
-                      <div class="mrg-top-20">
-                        <ul>
-                          <li>
-                            Internet basics:
-                            <i>What is the internet? </i> (n.d.). GCFGlobal.org.
-                            <a
-                              href="https://edu.gcfglobal.org/en/internetbasics/what-is-the-internet/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              >https://edu.gcfglobal.org/en/internetbasics/what-is-the-internet/</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+              <!-- card QUIZ -->
+              <div class="card">
+                <div class="card-block">
+                  
+                  <div class="flex row justify-content-center" id="questions">
                   </div>
-                </div>
-              </div>
-
-              <!--Botones de avance entre páginas-->
-              <div class="row mrg-btm-20">
-                <div class="col text-center">
-                  <div class="btn-group"></div>
-                </div>
-              </div>
-
-              <!--Widgets de avance de módulo y general-->
-              <div class="card widget-feed">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h1 class="feed-title tag tag-info">Módulo 1</h1>
-                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                    <div class="progress" style="height: 20px" id="bar">
-                      <div
-                        class="progress-bar bg-info"
-                        role="progressbar"
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style="max-width: 71%"
+                  <!-- DIV STICKY SCORECARD -->
+                  <div class="card d-flex p-2 mrg-top-10 w-1">
+                    <div class="submitbutton">
+                      <button
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#modal-fs"
+                        class="button"
+                        onclick="checkAll()"
                       >
-                        71%
-                      </div>
+                        Revisar
+                      </button>
                     </div>
                   </div>
-                  <div class="col-lg-4">
-                    <div class="row">
-                      <div class="col">
-                        <div id="circlecontainer"></div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="feed-subtitle">
-                          Progreso General del Curso
-                        </h3>
+                </div>
+                <!-- Columna derecha de preguntas END -->
+              </div>
+            </div>
+          </div>
+          <!-- card QUIZ -->
+
+          <div class="row mrg-btm-20">
+            <div class="col text-center">
+              <div class="btn-group"></div>
+            </div>
+          </div>
+
+          <div class="card widget-feed">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1 class="feed-title tag tag-info">Módulo 1</h1>
+                <h3 class="feed-subtitle">Tu Progreso</h3>
+                <div class="progress" style="height: 20px" id="bar">
+                  <div
+                    class="progress-bar bg-info"
+                    role="progressbar"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="max-width: 33%"
+                  >
+                    33%
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="row">
+                  <div class="col">
+                    <div id="circlecontainer"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-center">
+                    <h3 class="feed-subtitle">
+                      Progreso General del Curso
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <footer class="content-footer"></footer>
+        </div>
+      </div>
+
+              <div class="modal fade" id="modal-fs">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <a class="modal-close" href="" data-dismiss="modal" style="display: flex; justify-content: right;">
+                        <i class="ti-close" style="color: red; font-weight: bolder; font-size: 22px;"></i>
+                      </a>
+                      <div class="vertical-align text-center">
+                        <div class="table-cell">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-lg-9 col-md-10 col-sm-12 mr-auto ml-auto">
+                                <div class="pdd-horizon-30 pdd-btm-50">
+                                  <h1 class="mrg-btm-15 text-info" id="modal-score">
+                                    0 / 100
+                                  </h1>
+                                  <h3 class="mrg-top-20" id="modal-message">...</h3>
+                                  <img
+                                    id="correct-img"
+                                    class="img-responsive mrg-horizon-auto"
+                                    src="../../assets/images/course/modulo1/quiz/party.png"
+                                    alt="Party img"
+                                  />
+                                  <img
+                                    id="incorrect-img"
+                                    class="img-responsive mrg-horizon-auto"
+                                    src="../../assets/images/course/modulo1/quiz/bored.png"
+                                    alt="Problem solving img"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -183,27 +198,20 @@
             </div>
           </div>
           <!-- Content Wrapper END -->
-
-          <!-- Footer START -->
-          <footer class="content-footer"></footer>
-
-          <!-- Footer END -->
         </div>
         <!-- Page Container END -->
       </div>
     </div>
 
-    <script src="./../navbarHtml.js"></script>
-
     <!-- build:js assets/js/vendor.js -->
     <!-- plugins js -->
     <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
     <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../assets/vendors/PACE/pace.min.js"></script>
     <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
-    <!-- Progress plugins -->
     <script src="../../assets/js/progressbar.js"></script>
     <script src="../../assets/js/progress-circle.js"></script>
 
@@ -212,16 +220,18 @@
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="../../assets/js/app.js"></script>
-    <script src="../../assets/js/recycled/navigationbar.js"></script>
     <script src="../../assets/js/progress/url-script.js"></script>
 
     <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
     <script type="text/javascript">
-      show(3 / 27);
+      show(0.14);
     </script>
 
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
+    <script src="../../assets/js/scripts\modulo1/quizM1.js"></script>
+    <script src="../../assets/js/scripts/generales/centered-modal.js"></script>
   </body>
+
 </html>
